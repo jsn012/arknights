@@ -25,23 +25,17 @@ function Main() {
 }
 
 function Is2() {
-  let itemList = [];
   const [searchItem, setSearchItem] = useState(null);
+  const [option, setOption] = useState('id');
   const [items, setItems] = useState(itemData);
-
-  // const filteredProducts = itemData.filter((item) => {
-  //   return item.id == searchValue;
-  // });
-
-  for (let i=0; i<itemData.length; i++) {
-    itemList.push( <Item id={itemData[i].id} key={`item${itemData[i].id}`} /> );
-  }
 
   return(
     <>
       <header>
         <div className='search'>
-          <select className='options' name='options'>
+          <select className='options' name='options' onChange={(e) => {
+            setOption(e.target.value);
+          }}>
             <option value='id'>ID</option>
             <option value='name'>이름</option>
           </select>
@@ -58,8 +52,18 @@ function Is2() {
       <main>
         <div className='is2__main'>
           <div className='is2-item__grid'>
-            {/* {itemList} */}
-            {itemData.map(item => (
+            {itemData.filter((data) => {
+              if (searchItem == null || searchItem == "") {
+                return data;
+              }
+              else {
+                if (option == 'id') {
+                  if (data.no.includes(searchItem)) { return data; }
+                } else if (option == 'name') {
+                  if (data.name.toLowerCase().includes(searchItem.toLowerCase())) { return data; }
+                }
+              }
+            }).map(item => (
               <Item id={item.id} key={`item${item.id}`} />
             ))}
           </div>
@@ -77,10 +81,10 @@ function Item(props) {
   const iconStyle = { backgroundImage: `url(${process.env.PUBLIC_URL + itemData[id].icon})` }
 
   return(
-    <div className='item' id={id}>
+    <div className='item' id={id} style={id === 0 ? {display: 'none'} : {}}>
       <div className='item-icon'
         style={iconStyle}>
-        <Link to={`/is/season2/item/${id}`}><p>{itemData[id].id}</p></Link>
+        <Link to={`/is/season2/item/${id}`}><p>{itemData[id].no}</p></Link>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 /* header */
 .search {
-  padding: 20px 0 14px 0;
+  padding: 20px 0 16px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,8 +28,8 @@ main {
 
 .is2-item__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
-  gap: 35px 20px;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  gap: 32px 16px;
 }
 
 .item {
@@ -39,10 +39,9 @@ main {
 }
 
 .item-icon {
-  width: 64px;
+  width: 60px;
   aspect-ratio: 1;
-  border-radius: 14px;
-  box-shadow: 0 0 9px 1px #44444456;
+  border: 1px solid #aaa;
   background-size: cover;
   position: relative;
 }
@@ -57,10 +56,11 @@ main {
 }
 
 .item-icon a p {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 600;
   color: #000;
-  top: -38px;
+  top: -33px;
+  left: 0px;
   position: absolute;
 }
 
@@ -94,15 +94,6 @@ main {
   height: 100%;
 }
 
-@media screen and (min-width: 325px) {
-  .is2-item__grid { grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); }
-
-  .item-icon {
-    width: 74px;
-    border-radius: 18px;
-  }
-}
-
 @media screen and (min-width: 550px) {
   .search { padding: 26px 0 12px 0; }
   .search .search-bar { height: 30px; }
@@ -111,26 +102,37 @@ main {
     height: 36px;
   }
 
-  main { padding: 30px; }
+  main { padding: 30px 50px; }
 
-  .is2-item__grid { gap: 40px 25px; }
+  .is2-item__grid { 
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    gap: 40px 30px;
+  }
 
-  .item-icon { transition: all .25s; }
+  .item-icon {
+    width: 70px;
+    transition: all .25s;
+  }
   .item-icon:hover {
     cursor: pointer;
     transform: scale(1.15);
   }
   .item-icon a p {
-    font-size: 20px;
-    top: -42px;
+    font-size: 16px;
+    top: -36px;
   }
 }
 
 @media screen and (min-width: 1000px) {
-  main { padding: 40px 50px 50px 50px; }
+  main { padding: 40px 80px; }
 
-  .is2-item__grid { grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); }
+  .is2-item__grid { grid-template-columns: repeat(auto-fill, minmax(76px, 1fr)); }
   
-  .item-icon { width: 80px; }
+  .item-icon { width: 76px; }
   .is2-item__grid { gap: 46px 36px; }
+
+  .item-icon a p {
+    font-size: 17px;
+    top: -38px;
+  }
 }
