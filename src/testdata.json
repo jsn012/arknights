@@ -3,1224 +3,1477 @@
     "id": 0,
     "no": "000",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/filename",
+    "detail": "설명"
   },
   {
     "id": 1,
     "no": "001",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r01.png",
+    "detail": "설명"
   },
   {
     "id": 2,
     "no": "002",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r02.png",
+    "detail": "설명"
   },
   {
     "id": 3,
     "no": "003",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r03.png",
+    "detail": "설명"
   },
   {
     "id": 4,
     "no": "004",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r04.png",
+    "detail": "설명"
   },
   {
     "id": 5,
     "no": "005",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r05.png",
+    "detail": "설명"
   },
   {
     "id": 6,
     "no": "006",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r06.png",
+    "detail": "설명"
   },
   {
     "id": 7,
     "no": "007",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r07.png",
+    "detail": "설명"
   },
   {
     "id": 8,
     "no": "008",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r08.png",
+    "detail": "설명"
   },
   {
     "id": 9,
     "no": "009",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r09.png",
+    "detail": "설명"
   },
   {
     "id": 10,
     "no": "010",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r10.png",
+    "detail": "설명"
   },
   {
     "id": 11,
     "no": "011",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r11.png",
+    "detail": "설명"
   },
   {
     "id": 12,
     "no": "012",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r12.png",
+    "detail": "설명"
   },
   {
     "id": 13,
     "no": "013",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r13.png",
+    "detail": "설명"
   },
   {
     "id": 14,
     "no": "014",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r14.png",
+    "detail": "설명"
   },
   {
     "id": 15,
     "no": "015",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r15.png",
+    "detail": "설명"
   },
   {
     "id": 16,
     "no": "016",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r16.png",
+    "detail": "설명"
   },
   {
     "id": 17,
     "no": "017",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r17.png",
+    "detail": "설명"
   },
   {
     "id": 18,
     "no": "018",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r18.png",
+    "detail": "설명"
   },
   {
     "id": 19,
     "no": "019",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r19.png",
+    "detail": "설명"
   },
   {
     "id": 20,
     "no": "020",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r20.png",
+    "detail": "설명"
   },
   {
     "id": 21,
     "no": "021",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r21.png",
+    "detail": "설명"
   },
   {
     "id": 22,
     "no": "022",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r22.png",
+    "detail": "설명"
   },
   {
     "id": 23,
     "no": "023",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r23.png",
+    "detail": "설명"
   },
   {
     "id": 24,
     "no": "024",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r24.png",
+    "detail": "설명"
   },
   {
     "id": 25,
     "no": "025",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r25.png",
+    "detail": "설명"
   },
   {
     "id": 26,
     "no": "026",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r26.png",
+    "detail": "설명"
   },
   {
     "id": 27,
     "no": "027",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r27.png",
+    "detail": "설명"
   },
   {
     "id": 28,
     "no": "028",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r28.png",
+    "detail": "설명"
   },
   {
     "id": 29,
     "no": "029",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r29.png",
+    "detail": "설명"
   },
   {
     "id": 30,
     "no": "030",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r30.png",
+    "detail": "설명"
   },
   {
     "id": 31,
     "no": "031",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r31.png",
+    "detail": "설명"
   },
   {
     "id": 32,
     "no": "032",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r32.png",
+    "detail": "설명"
   },
   {
     "id": 33,
     "no": "033",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r33.png",
+    "detail": "설명"
   },
   {
     "id": 34,
     "no": "034",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r34.png",
+    "detail": "설명"
   },
   {
     "id": 35,
     "no": "035",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r35.png",
+    "detail": "설명"
   },
   {
     "id": 36,
     "no": "036",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r36.png",
+    "detail": "설명"
   },
   {
     "id": 37,
     "no": "037",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r37.png",
+    "detail": "설명"
   },
   {
     "id": 38,
     "no": "038",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r38.png",
+    "detail": "설명"
   },
   {
     "id": 39,
     "no": "039",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r39.png",
+    "detail": "설명"
   },
   {
     "id": 40,
     "no": "040",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r40.png",
+    "detail": "설명"
   },
   {
     "id": 41,
     "no": "041",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r41.png",
+    "detail": "설명"
   },
   {
     "id": 42,
     "no": "042",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r42.png",
+    "detail": "설명"
   },
   {
     "id": 43,
     "no": "043",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r43.png",
+    "detail": "설명"
   },
   {
     "id": 44,
     "no": "044",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_r44.png",
+    "detail": "설명"
   },
   {
     "id": 45,
     "no": "045",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a01.png",
+    "detail": "설명"
   },
   {
     "id": 46,
     "no": "046",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a02.png",
+    "detail": "설명"
   },
   {
     "id": 47,
     "no": "047",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a03.png",
+    "detail": "설명"
   },
   {
     "id": 48,
     "no": "048",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a04.png",
+    "detail": "설명"
   },
   {
     "id": 49,
     "no": "049",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a05.png",
+    "detail": "설명"
   },
   {
     "id": 50,
     "no": "050",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a06.png",
+    "detail": "설명"
   },
   {
     "id": 51,
     "no": "051",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a07.png",
+    "detail": "설명"
   },
   {
     "id": 52,
     "no": "052",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a08.png",
+    "detail": "설명"
   },
   {
     "id": 53,
     "no": "053",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a09.png",
+    "detail": "설명"
   },
   {
     "id": 54,
     "no": "054",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a10.png",
+    "detail": "설명"
   },
   {
     "id": 55,
     "no": "055",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a11.png",
+    "detail": "설명"
   },
   {
     "id": 56,
     "no": "056",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a12.png",
+    "detail": "설명"
   },
   {
     "id": 57,
     "no": "057",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a13.png",
+    "detail": "설명"
   },
   {
     "id": 58,
     "no": "058",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a14.png",
+    "detail": "설명"
   },
   {
     "id": 59,
     "no": "059",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a15.png",
+    "detail": "설명"
   },
   {
     "id": 60,
     "no": "060",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a16.png",
+    "detail": "설명"
   },
   {
     "id": 61,
     "no": "061",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a17.png",
+    "detail": "설명"
   },
   {
     "id": 62,
     "no": "062",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a18.png",
+    "detail": "설명"
   },
   {
     "id": 63,
     "no": "063",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a19.png",
+    "detail": "설명"
   },
   {
     "id": 64,
     "no": "064",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a20.png",
+    "detail": "설명"
   },
   {
     "id": 65,
     "no": "065",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a21.png",
+    "detail": "설명"
   },
   {
     "id": 66,
     "no": "066",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a22.png",
+    "detail": "설명"
   },
   {
     "id": 67,
     "no": "067",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a23.png",
+    "detail": "설명"
   },
   {
     "id": 68,
     "no": "068",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a24.png",
+    "detail": "설명"
   },
   {
     "id": 69,
     "no": "069",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a25.png",
+    "detail": "설명"
   },
   {
     "id": 70,
     "no": "070",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a26.png",
+    "detail": "설명"
   },
   {
     "id": 71,
     "no": "071",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a27.png",
+    "detail": "설명"
   },
   {
     "id": 72,
     "no": "072",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a28.png",
+    "detail": "설명"
   },
   {
     "id": 73,
     "no": "073",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a29.png",
+    "detail": "설명"
   },
   {
     "id": 74,
     "no": "074",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a30.png",
+    "detail": "설명"
   },
   {
     "id": 75,
     "no": "075",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a31.png",
+    "detail": "설명"
   },
   {
     "id": 76,
     "no": "076",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a32.png",
+    "detail": "설명"
   },
   {
     "id": 77,
     "no": "077",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a33.png",
+    "detail": "설명"
   },
   {
     "id": 78,
     "no": "078",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a34.png",
+    "detail": "설명"
   },
   {
     "id": 79,
     "no": "079",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a35.png",
+    "detail": "설명"
   },
   {
     "id": 80,
     "no": "080",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a36.png",
+    "detail": "설명"
   },
   {
     "id": 81,
     "no": "081",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a37.png",
+    "detail": "설명"
   },
   {
     "id": 82,
     "no": "082",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a38.png",
+    "detail": "설명"
   },
   {
     "id": 83,
     "no": "083",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a39.png",
+    "detail": "설명"
   },
   {
     "id": 84,
     "no": "084",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a40.png",
+    "detail": "설명"
   },
   {
     "id": 85,
     "no": "085",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a41.png",
+    "detail": "설명"
   },
   {
     "id": 86,
     "no": "086",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a42.png",
+    "detail": "설명"
   },
   {
     "id": 87,
     "no": "087",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a43.png",
+    "detail": "설명"
   },
   {
     "id": 88,
     "no": "088",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a44.png",
+    "detail": "설명"
   },
   {
     "id": 89,
     "no": "089",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a45.png",
+    "detail": "설명"
   },
   {
     "id": 90,
     "no": "090",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a46.png",
+    "detail": "설명"
   },
   {
     "id": 91,
     "no": "091",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a47.png",
+    "detail": "설명"
   },
   {
     "id": 92,
     "no": "092",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_a48.png",
+    "detail": "설명"
   },
   {
     "id": 93,
     "no": "093",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p01.png",
+    "detail": "설명"
   },
   {
     "id": 94,
     "no": "094",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p02.png",
+    "detail": "설명"
   },
   {
     "id": 95,
     "no": "095",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p03.png",
+    "detail": "설명"
   },
   {
     "id": 96,
     "no": "096",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p04.png",
+    "detail": "설명"
   },
   {
     "id": 97,
     "no": "097",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p05.png",
+    "detail": "설명"
   },
   {
     "id": 98,
     "no": "098",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p06.png",
+    "detail": "설명"
   },
   {
     "id": 99,
     "no": "099",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p07.png",
+    "detail": "설명"
   },
   {
     "id": 100,
     "no": "100",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p08.png",
+    "detail": "설명"
   },
   {
     "id": 101,
     "no": "101",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p09.png",
+    "detail": "설명"
   },
   {
     "id": 102,
     "no": "102",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p10.png",
+    "detail": "설명"
   },
   {
     "id": 103,
     "no": "103",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p11.png",
+    "detail": "설명"
   },
   {
     "id": 104,
     "no": "104",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p12.png",
+    "detail": "설명"
   },
   {
     "id": 105,
     "no": "105",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p13.png",
+    "detail": "설명"
   },
   {
     "id": 106,
     "no": "106",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p14.png",
+    "detail": "설명"
   },
   {
     "id": 107,
     "no": "107",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p15.png",
+    "detail": "설명"
   },
   {
     "id": 108,
     "no": "108",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p16.png",
+    "detail": "설명"
   },
   {
     "id": 109,
     "no": "109",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p17.png",
+    "detail": "설명"
   },
   {
     "id": 110,
     "no": "110",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p18.png",
+    "detail": "설명"
   },
   {
     "id": 111,
     "no": "111",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p19.png",
+    "detail": "설명"
   },
   {
     "id": 112,
     "no": "112",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p20.png",
+    "detail": "설명"
   },
   {
     "id": 113,
     "no": "113",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p21.png",
+    "detail": "설명"
   },
   {
     "id": 114,
     "no": "114",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p22.png",
+    "detail": "설명"
   },
   {
     "id": 115,
     "no": "115",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p23.png",
+    "detail": "설명"
   },
   {
     "id": 116,
     "no": "116",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p24.png",
+    "detail": "설명"
   },
   {
     "id": 117,
     "no": "117",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p25.png",
+    "detail": "설명"
   },
   {
     "id": 118,
     "no": "118",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p26.png",
+    "detail": "설명"
   },
   {
     "id": 119,
     "no": "119",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p27.png",
+    "detail": "설명"
   },
   {
     "id": 120,
     "no": "120",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p28.png",
+    "detail": "설명"
   },
   {
     "id": 121,
     "no": "121",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p29.png",
+    "detail": "설명"
   },
   {
     "id": 122,
     "no": "122",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p30.png",
+    "detail": "설명"
   },
   {
     "id": 123,
     "no": "123",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p31.png",
+    "detail": "설명"
   },
   {
     "id": 124,
     "no": "124",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p32.png",
+    "detail": "설명"
   },
   {
     "id": 125,
     "no": "125",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p33.png",
+    "detail": "설명"
   },
   {
     "id": 126,
     "no": "126",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p34.png",
+    "detail": "설명"
   },
   {
     "id": 127,
     "no": "127",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p35.png",
+    "detail": "설명"
   },
   {
     "id": 128,
     "no": "128",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p36.png",
+    "detail": "설명"
   },
   {
     "id": 129,
     "no": "129",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p37.png",
+    "detail": "설명"
   },
   {
     "id": 130,
     "no": "130",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p38.png",
+    "detail": "설명"
   },
   {
     "id": 131,
     "no": "131",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p39.png",
+    "detail": "설명"
   },
   {
     "id": 132,
     "no": "132",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p40.png",
+    "detail": "설명"
   },
   {
     "id": 133,
     "no": "133",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p41.png",
+    "detail": "설명"
   },
   {
     "id": 134,
     "no": "134",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p42.png",
+    "detail": "설명"
   },
   {
     "id": 135,
     "no": "135",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p43.png",
+    "detail": "설명"
   },
   {
     "id": 136,
     "no": "136",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p44.png",
+    "detail": "설명"
   },
   {
     "id": 137,
     "no": "137",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p45.png",
+    "detail": "설명"
   },
   {
     "id": 138,
     "no": "138",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p46.png",
+    "detail": "설명"
   },
   {
     "id": 139,
     "no": "139",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_p47.png",
+    "detail": "설명"
   },
   {
     "id": 140,
     "no": "140",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q01.png",
+    "detail": "설명"
   },
   {
     "id": 141,
     "no": "141",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q02.png",
+    "detail": "설명"
   },
   {
     "id": 142,
     "no": "142",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q03.png",
+    "detail": "설명"
   },
   {
     "id": 143,
     "no": "143",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q04.png",
+    "detail": "설명"
   },
   {
     "id": 144,
     "no": "144",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q05.png",
+    "detail": "설명"
   },
   {
     "id": 145,
     "no": "145",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q06.png",
+    "detail": "설명"
   },
   {
     "id": 146,
     "no": "146",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q07.png",
+    "detail": "설명"
   },
   {
     "id": 147,
     "no": "147",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q08.png",
+    "detail": "설명"
   },
   {
     "id": 148,
     "no": "148",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q09.png",
+    "detail": "설명"
   },
   {
     "id": 149,
     "no": "149",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q10.png",
+    "detail": "설명"
   },
   {
     "id": 150,
     "no": "150",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q11.png",
+    "detail": "설명"
   },
   {
     "id": 151,
     "no": "151",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q12.png",
+    "detail": "설명"
   },
   {
     "id": 152,
     "no": "152",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q13.png",
+    "detail": "설명"
   },
   {
     "id": 153,
     "no": "153",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q14.png",
+    "detail": "설명"
   },
   {
     "id": 154,
     "no": "154",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q15.png",
+    "detail": "설명"
   },
   {
     "id": 155,
     "no": "155",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q16.png",
+    "detail": "설명"
   },
   {
     "id": 156,
     "no": "156",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q17.png",
+    "detail": "설명"
   },
   {
     "id": 157,
     "no": "157",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q18.png",
+    "detail": "설명"
   },
   {
     "id": 158,
     "no": "158",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q19.png",
+    "detail": "설명"
   },
   {
     "id": 159,
     "no": "159",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q20.png",
+    "detail": "설명"
   },
   {
     "id": 160,
     "no": "160",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q21.png",
+    "detail": "설명"
   },
   {
     "id": 161,
     "no": "161",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q22.png",
+    "detail": "설명"
   },
   {
     "id": 162,
     "no": "162",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q23.png",
+    "detail": "설명"
   },
   {
     "id": 163,
     "no": "163",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q24.png",
+    "detail": "설명"
   },
   {
     "id": 164,
     "no": "164",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q25.png",
+    "detail": "설명"
   },
   {
     "id": 165,
     "no": "165",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q26.png",
+    "detail": "설명"
   },
   {
     "id": 166,
     "no": "166",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q27.png",
+    "detail": "설명"
   },
   {
     "id": 167,
     "no": "167",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q28.png",
+    "detail": "설명"
   },
   {
     "id": 168,
     "no": "168",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q29.png",
+    "detail": "설명"
   },
   {
     "id": 169,
     "no": "169",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q30.png",
+    "detail": "설명"
   },
   {
     "id": 170,
     "no": "170",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q31.png",
+    "detail": "설명"
   },
   {
     "id": 171,
     "no": "171",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q32.png",
+    "detail": "설명"
   },
   {
     "id": 172,
     "no": "172",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q33.png",
+    "detail": "설명"
   },
   {
     "id": 173,
     "no": "173",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q34.png",
+    "detail": "설명"
   },
   {
     "id": 174,
     "no": "174",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q35.png",
+    "detail": "설명"
   },
   {
     "id": 175,
     "no": "175",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q36.png",
+    "detail": "설명"
   },
   {
     "id": 176,
     "no": "176",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_q37.png",
+    "detail": "설명"
   },
   {
     "id": 177,
     "no": "177",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_c01.png",
+    "detail": "설명"
   },
   {
     "id": 178,
     "no": "178",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_c02.png",
+    "detail": "설명"
   },
   {
     "id": 179,
     "no": "179",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_c03.png",
+    "detail": "설명"
   },
   {
     "id": 180,
     "no": "180",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_c04.png",
+    "detail": "설명"
   },
   {
     "id": 181,
     "no": "181",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_c05.png",
+    "detail": "설명"
   },
   {
     "id": 182,
     "no": "182",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_c06.png",
+    "detail": "설명"
   },
   {
     "id": 183,
     "no": "183",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_m01.png",
+    "detail": "설명"
   },
   {
     "id": 184,
     "no": "184",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_m02.png",
+    "detail": "설명"
   },
   {
     "id": 185,
     "no": "185",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_m03.png",
+    "detail": "설명"
   },
   {
     "id": 186,
     "no": "186",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_m04.png",
+    "detail": "설명"
   },
   {
     "id": 187,
     "no": "187",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_m05.png",
+    "detail": "설명"
   },
   {
     "id": 188,
     "no": "188",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_m06.png",
+    "detail": "설명"
   },
   {
     "id": 189,
     "no": "189",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_m07.png",
+    "detail": "설명"
   },
   {
     "id": 190,
     "no": "190",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_m08.png",
+    "detail": "설명"
   },
   {
     "id": 191,
     "no": "191",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_m09.png",
+    "detail": "설명"
   },
   {
     "id": 192,
     "no": "192",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_m10.png",
+    "detail": "설명"
   },
   {
     "id": 193,
     "no": "193",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_m11.png",
+    "detail": "설명"
   },
   {
     "id": 194,
     "no": "194",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_m12.png",
+    "detail": "설명"
   },
   {
     "id": 195,
     "no": "195",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_m13.png",
+    "detail": "설명"
   },
   {
     "id": 196,
     "no": "196",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_m14.png",
+    "detail": "설명"
   },
   {
     "id": 197,
     "no": "197",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_m15.png",
+    "detail": "설명"
   },
   {
     "id": 198,
     "no": "198",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_m16.png",
+    "detail": "설명"
   },
   {
     "id": 199,
     "no": "199",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_m17.png",
+    "detail": "설명"
   },
   {
     "id": 200,
     "no": "200",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_m18.png",
+    "detail": "설명"
   },
   {
     "id": 201,
     "no": "201",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_m19.png",
+    "detail": "설명"
   },
   {
     "id": 202,
     "no": "202",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_m20.png",
+    "detail": "설명"
   },
   {
     "id": 203,
     "no": "203",
     "name": "이름",
-    "detail": "효과"
+    "icon": "/items/rogue_1_relic_m21.png",
+    "detail": "설명"
+  },
+  {
+    "id": 204,
+    "no": "PCS01",
+    "name": "이름",
+    "icon": "/items/rogue_1_relic_sp01.png",
+    "detail": "설명"
+  },
+  {
+    "id": 205,
+    "no": "PCS02",
+    "name": "이름",
+    "icon": "/items/rogue_1_relic_sp02.png",
+    "detail": "설명"
+  },
+  {
+    "id": 206,
+    "no": "PCS03",
+    "name": "이름",
+    "icon": "/items/rogue_1_relic_sp03.png",
+    "detail": "설명"
+  },
+  {
+    "id": 207,
+    "no": "PCS04",
+    "name": "이름",
+    "icon": "/items/rogue_1_relic_sp04.png",
+    "detail": "설명"
+  },
+  {
+    "id": 208,
+    "no": "PCS05",
+    "name": "이름",
+    "icon": "/items/rogue_1_relic_sp05.png",
+    "detail": "설명"
+  },
+  {
+    "id": 209,
+    "no": "PCS06",
+    "name": "이름",
+    "icon": "/items/rogue_1_relic_sp06.png",
+    "detail": "설명"
+  },
+  {
+    "id": 210,
+    "no": "PCS07",
+    "name": "이름",
+    "icon": "/items/rogue_1_relic_sp07.png",
+    "detail": "설명"
   }
 ]
