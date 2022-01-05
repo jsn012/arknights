@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Routes, Route, Link, useParams } from 'react-router-dom';
+import { Routes, Route, Link, useParams, useNavigate } from 'react-router-dom';
 
 import itemData from './testdata.json';
 import './App.css';
@@ -27,7 +27,6 @@ function Main() {
 function Is2() {
   const [searchItem, setSearchItem] = useState(null);
   const [option, setOption] = useState('id');
-  const [items, setItems] = useState(itemData);
 
   return(
     <>
@@ -91,25 +90,28 @@ function Item(props) {
 }
 
 function ItemDetail() {
+  const navigate = useNavigate();
   const id = useParams().itemId;
   const iconStyle = { backgroundImage: `url(${process.env.PUBLIC_URL + itemData[id].icon})` }
-  console.log(id);
 
   return(
     <section className='item__section' id={id}>
-      <div className='close__button'>
-        <Link to="/is/season2"></Link>
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-chevron-compact-down" viewBox="0 0 16 16" strokeWidth="3">
-          <path fillRule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" />
-        </svg>
-      </div>
-      <div className='item-no section__item'>{itemData[id].no}</div>
-      <div className='item-icon section__item' style={iconStyle}></div>
-      <div className='item-name section__item'>
-        {itemData[id].name}
-      </div>
-      <div className='item-detail section__item'>
-        {itemData[id].detail}
+      <div className='item-section__background' onClick={(e) => { navigate("/is/season2"); }}></div>
+      <div className='item-section__inner'>
+        {/* <div className='close__button'>
+          <Link to="/is/season2"></Link>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-chevron-compact-down" viewBox="0 0 16 16" strokeWidth="3">
+            <path fillRule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" />
+          </svg>
+        </div> */}
+        <div className='item-no section__item'>{itemData[id].no}</div>
+        <div className='item-icon section__item' style={iconStyle}></div>
+        <div className='item-name section__item'>
+          {itemData[id].name}
+        </div>
+        <div className='item-detail section__item'>
+          {itemData[id].detail}
+        </div>
       </div>
     </section>
   );
