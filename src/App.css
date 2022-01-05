@@ -1,38 +1,136 @@
-.App {
+/* header */
+.search {
+  padding: 20px 0 14px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search .search-bar {
+  width: 40vw;
+  min-width: 150px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+.search .options {
+  width: 80px;
+  height: 31px;
+}
+
+/* main */
+main {
+  max-width: 1000px;
+  min-width: 150px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.is2-item__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+  gap: 35px 20px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-icon {
+  width: 64px;
+  aspect-ratio: 1;
+  border-radius: 14px;
+  box-shadow: 0 0 9px 1px #44444456;
+  background-size: cover;
+  position: relative;
+}
+
+.item-icon a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+}
+
+.item-icon a p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  top: -38px;
+  position: absolute;
+}
+
+/* detail */
+.item__section {
+  width: 100%;
+  height: 70%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #eee;
+  border-radius: 24px 24px 0 0;
+  box-shadow: 0 0 20px 2px #31313165;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section__item { margin: 20px auto; }
+.item-detail { padding: 0 20px; }
+
+.close__button {
+  padding: 4px 10px;
+  text-align: center;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.close__button a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 325px) {
+  .is2-item__grid { grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); }
+
+  .item-icon {
+    width: 74px;
+    border-radius: 18px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (min-width: 550px) {
+  .search { padding: 26px 0 12px 0; }
+  .search .search-bar { height: 30px; }
+  .search .options {
+    width: 100px;
+    height: 36px;
+  }
+
+  main { padding: 30px; }
+
+  .is2-item__grid { gap: 40px 25px; }
+
+  .item-icon { transition: all .25s; }
+  .item-icon:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+  }
+  .item-icon a p {
+    font-size: 20px;
+    top: -42px;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
+@media screen and (min-width: 1000px) {
+  main { padding: 40px 50px 50px 50px; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  .is2-item__grid { grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); }
+  
+  .item-icon { width: 80px; }
+  .is2-item__grid { gap: 46px 36px; }
 }
