@@ -28,8 +28,8 @@ main {
 
 .is2-item__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
-  gap: 32px 16px;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  gap: 32px 6px;
 }
 
 .item {
@@ -39,12 +39,12 @@ main {
 }
 
 .item-icon {
-  width: 60px;
-  aspect-ratio: 1;
+  width: 70px;
+  aspect-ratio: 1.5/1;
   border: 1px solid #aaa;
   background-repeat : no-repeat;
   background-size: auto 100%;
-  background-position: center top;
+  background-position: center;
   position: relative;
 }
 
@@ -131,12 +131,12 @@ main {
   main { padding: 30px 50px; }
 
   .is2-item__grid { 
-    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
-    gap: 40px 30px;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 40px 20px;
   }
 
   .item-icon {
-    width: 70px;
+    width: 90px;
     transition: all .25s;
   }
   .item-icon:hover {
@@ -152,10 +152,10 @@ main {
 @media screen and (min-width: 1000px) {
   main { padding: 40px 80px; }
 
-  .is2-item__grid { grid-template-columns: repeat(auto-fill, minmax(76px, 1fr)); }
+  .is2-item__grid { grid-template-columns: repeat(auto-fill, minmax(105px, 1fr)); }
   
-  .item-icon { width: 76px; }
-  .is2-item__grid { gap: 46px 36px; }
+  .item-icon { width: 105px; }
+  .is2-item__grid { gap: 46px 16px; }
 
   .item-icon a p {
     font-size: 17px;
