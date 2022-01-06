@@ -17,9 +17,11 @@ function App() {
 }
 
 function Main() {
+  const navigate = useNavigate();
+
   return(
     <div className='main'>
-      Main
+      <button type='button' onClick={() => {navigate('/is/season2/item')}}>로그라이크2</button>
     </div>
   );
 }
