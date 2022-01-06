@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/arknights/static/css/main.32a146fe.css",
-    "main.js": "/arknights/static/js/main.cbc5d45b.js",
+    "main.js": "/arknights/static/js/main.c30baf1d.js",
     "static/js/787.8019188b.chunk.js": "/arknights/static/js/787.8019188b.chunk.js",
     "index.html": "/arknights/index.html",
     "main.32a146fe.css.map": "/arknights/static/css/main.32a146fe.css.map",
-    "main.cbc5d45b.js.map": "/arknights/static/js/main.cbc5d45b.js.map",
+    "main.c30baf1d.js.map": "/arknights/static/js/main.c30baf1d.js.map",
     "787.8019188b.chunk.js.map": "/arknights/static/js/787.8019188b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.32a146fe.css",
-    "static/js/main.cbc5d45b.js"
+    "static/js/main.c30baf1d.js"
   ]
 }
