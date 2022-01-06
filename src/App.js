@@ -47,9 +47,9 @@ function Is2() {
       relic_q.push(<Item2 data={items2[i]} id={itemId++} key={items2[i]} />);
     } else if (i < 44 + 48 + 47 + 37 + 6) {
       relic_c.push(<Item2 data={items2[i]} id={itemId++} key={items2[i]} />);
-    } else if (i < 44 + 48 + 47 + 37 + 6 + 22) {
+    } else if (i < 44 + 48 + 47 + 37 + 6 + 21) {
       relic_m.push(<Item2 data={items2[i]} id={itemId++} key={items2[i]} />);
-    } else if (i < 44 + 48 + 47 + 37 + 6 + 22 + 6) {
+    } else if (i < 44 + 48 + 47 + 37 + 6 + 21 + 7) {
       relic_sp.push(<Item2 data={items2[i]} id={itemId++} key={items2[i]} />);
     }
   }
@@ -144,7 +144,7 @@ function Item2(props) {
     <div className='item' id={id}>
       <div className='item-icon'
         style={iconStyle}>
-        <Link to={`/is/season2/item/${id}`}><p>{id > 204 ? `SP${String(id-204).padStart(2, '0')}` : String(id).padStart(3, '0')}</p></Link>
+        <Link to={`/is/season2/item/${id}`}><p>{id > 203 ? `SP${String(id-203).padStart(2, '0')}` : String(id).padStart(3, '0')}</p></Link>
       </div>
     </div>
   );
@@ -160,7 +160,7 @@ function ItemDetail2() {
     <section className='item__section' id={id}>
       <div className='item-section__background' onClick={() => { navigate(-1); }}></div>
       <div className='item-section__inner'>
-        <div className='item-no section__item'>{id > 204-1 ? `SP${String(id-203).padStart(2, '0')}` : String(id + 1).padStart(3, '0')}</div>
+        <div className='item-no section__item'>{id > 203-1 ? `SP${String(id-202).padStart(2, '0')}` : String(id + 1).padStart(3, '0')}</div>
         <div className='item-icon section__item' style={iconStyle}></div>
         <div className='item-name section__item'>
           {itemData2[items2[id]].nameKr}
