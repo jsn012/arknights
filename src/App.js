@@ -158,7 +158,7 @@ function ItemDetail2() {
 
   return(
     <section className='item__section' id={id}>
-      <div className='item-section__background' onClick={() => { navigate("/is/season2/item"); }}></div>
+      <div className='item-section__background' onClick={() => { navigate(-1); }}></div>
       <div className='item-section__inner'>
         <div className='item-no section__item'>{id > 204-1 ? `SP${String(id-203).padStart(2, '0')}` : String(id + 1).padStart(3, '0')}</div>
         <div className='item-icon section__item' style={iconStyle}></div>
