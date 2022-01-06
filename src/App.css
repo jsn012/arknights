@@ -61,7 +61,7 @@ main {
   font-size: 14px;
   font-weight: 600;
   color: #000;
-  top: -15px;
+  top: -14px;
   left: 2px;
   text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
   position: absolute;
@@ -103,13 +103,24 @@ main {
 
 .item-no {
   font-size: 15px;
-  font-weight: 600;
-  margin: 8px auto;
+  font-weight: 700;
+  margin: 6px auto;
 }
 
 .item__section .item-icon {
   margin: 6px auto;
   border: none;
+}
+
+.item__section .item-name {
+  margin: 4px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.item__section .item-detail {
+  margin: 5px 0 6px 0;
+  font-size: 14px;
 }
 
 @media screen and (min-width: 550px) {

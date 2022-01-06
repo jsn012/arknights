@@ -9,30 +9,30 @@
   {
     "id": 1,
     "no": "001",
-    "name": "이름",
+    "name": "온수 주전자",
     "icon": "/items/rogue_1_relic_r01.png",
-    "detail": "설명"
+    "detail": "立即获得目标生命+2，希望+1"
   },
   {
     "id": 2,
     "no": "002",
-    "name": "이름",
+    "name": "特殊抑制器",
     "icon": "/items/rogue_1_relic_r02.png",
-    "detail": "설명"
+    "detail": "立即获得目标生命+6"
   },
   {
     "id": 3,
     "no": "003",
-    "name": "이름",
+    "name": "石像鬼塑像",
     "icon": "/items/rogue_1_relic_r03.png",
-    "detail": "설명"
+    "detail": "立即获得目标生命+6"
   },
   {
     "id": 4,
     "no": "004",
-    "name": "이름",
+    "name": "血魔的寝床",
     "icon": "/items/rogue_1_relic_r04.png",
-    "detail": "설명"
+    "detail": "立即获得目标生命+8"
   },
   {
     "id": 5,
