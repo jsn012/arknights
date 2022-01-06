@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Routes, Route, Link, useParams, useNavigate } from 'react-router-dom';
 
-import itemData from './testdata.json';
 import itemData2 from './itemdata.json';
 import './App.css';
 import React from 'react';
@@ -26,78 +25,115 @@ function Main() {
 }
 
 function Is2() {
-  const [searchItem, setSearchItem] = useState(null);
-  const [option, setOption] = useState('id');
-
-  let filter = itemData.filter((data) => {
-    if (searchItem == null || searchItem == "") {
-      return data;
-    }
-    else {
-      if (option == 'id') {
-        if (data.no.includes(searchItem)) { return data; }
-      } else if (option == 'name') {
-        if (data.name.toLowerCase().includes(searchItem.toLowerCase())) { return data; }
-      }
-    }
-  });
-
   const items2 = Object.keys(itemData2);
   let itemId = 1;
 
+  let relic_r = [];
+  let relic_a = [];
+  let relic_p = [];
+  let relic_q = [];
+  let relic_c = [];
+  let relic_m = [];
+  let relic_sp = [];
+
+  for (let i=0; i<items2.length; i++) {
+    if (i < 44) {
+      relic_r.push(<Item2 data={items2[i]} id={itemId++} key={items2[i]} />);
+    } else if (i < 44 + 48) {
+      relic_a.push(<Item2 data={items2[i]} id={itemId++} key={items2[i]} />);
+    } else if (i < 44 + 48 + 47) {
+      relic_p.push(<Item2 data={items2[i]} id={itemId++} key={items2[i]} />);
+    } else if (i < 44 + 48 + 47 + 37) {
+      relic_q.push(<Item2 data={items2[i]} id={itemId++} key={items2[i]} />);
+    } else if (i < 44 + 48 + 47 + 37 + 6) {
+      relic_c.push(<Item2 data={items2[i]} id={itemId++} key={items2[i]} />);
+    } else if (i < 44 + 48 + 47 + 37 + 6 + 22) {
+      relic_m.push(<Item2 data={items2[i]} id={itemId++} key={items2[i]} />);
+    } else if (i < 44 + 48 + 47 + 37 + 6 + 22 + 6) {
+      relic_sp.push(<Item2 data={items2[i]} id={itemId++} key={items2[i]} />);
+    }
+  }
+
+  const [gridCheck, setGridCheck] = useState([1, 1, 1, 1, 1, 1, 1]);
+  const [gridStyle, setGridStyle] =
+    useState(['grid-on', 'grid-on', 'grid-on', 'grid-on', 'grid-on', 'grid-on', 'grid-on']);
+
+  const gridOnOff = () => {
+    // if (gridCheck === 0) {
+    //   setGridStyle[0] ('grid-on');
+    //   setGridCheck(1);
+    // } else {
+    //   setGridStyle[0]('grid-off');
+    //   setGridCheck(0);
+    // }
+  }
+
   return(
-    <>
-      <header>
-        <div className='search'>
-          <select className='options' name='options' onChange={(e) => {
-            setOption(e.target.value);
-          }}>
-            <option value='id'>ID</option>
-            <option value='name'>이름</option>
-          </select>
-          <input
-            className='search-bar'
-            type="texy"
-            placeholder="Search"
-            onChange={(e) => {
-              setSearchItem(e.target.value);
-            }}
-          />
-        </div>
-      </header>
-      <main>
-        <div className='is2__main'>
-          <div className='is2-item__grid'>
-            {/* {filter.map(item => ( */}
-            {items2.map(item => (
-              // {/* <Item id={item.id} key={`item${item.id}`} /> */}
-              <Item2 data={item} id={itemId++} key={item} />
-            ))}
-            {/* {itemList} */}
+    <main>
+      <div className='is2__main'>
+        <section className={`relic_r ${gridStyle[0]}`}>
+          <div className={`grid__header survival-suppor`} onClick={gridOnOff}>
+            <span>Survival Suppor</span>
           </div>
-          <Routes>
-            {/* <Route path="/:itemId" element={<ItemDetail />} /> */}
-            <Route path="/:itemId" element={<ItemDetail2 />} />
-          </Routes>
-        </div>
-      </main>
-    </>
+          <div className='is2-item__grid'>
+            {relic_r}
+          </div>
+        </section>
+        <section className={`relic_a ${gridStyle[1]}`}>
+          <div className={`grid__header gear-of-fight`} onClick={gridOnOff}>
+            Gear Of Fight
+          </div>
+          <div className='is2-item__grid'>
+            {relic_a}
+          </div>
+        </section>
+        <section className={`relic_p ${gridStyle[2]}`}>
+          <div className={`grid__header professional-tool`} onClick={gridOnOff}>
+            Professional Tool
+          </div>
+          <div className='is2-item__grid'>
+            {relic_p}
+          </div>
+        </section>
+        <section className={`relic_q ${gridStyle[3]}`}>
+          <div className={`grid__header collection-of-clever-use`} onClick={gridOnOff}>
+            Collection Of Clever Use
+          </div>
+          <div className='is2-item__grid relic_q'>
+            {relic_q}
+          </div>
+        </section>
+        <section className={`relic_c ${gridStyle[4]}`}>
+          <div className={`grid__header proof-of-glory`} onClick={gridOnOff}>
+            Proof Of Glory
+          </div>
+          <div className='is2-item__grid relic_c'>
+            {relic_c}
+          </div>
+        </section>
+        <section className={`relic_m ${gridStyle[5]}`}>
+          <div className={`grid__header storyteller`} onClick={gridOnOff}>
+            Storyteller
+          </div>
+          <div className='is2-item__grid relic_m'>
+            {relic_m}
+          </div>
+        </section>
+        <section className={`relic_sp ${gridStyle[6]}`}>
+          <div className={`grid__header secret-in-the-troupe`} onClick={gridOnOff}>
+            Secret In The Troupe
+          </div>
+          <div className='is2-item__grid relic_sp'>
+            {relic_sp}
+          </div>
+        </section>
+        <Routes>
+          <Route path="/:itemId" element={<ItemDetail2 />} />
+        </Routes>
+      </div>
+    </main>
   );
 }
-
-// function Item(props) {
-//   const id = props.id;
-//   const iconStyle = { backgroundImage: `url(${process.env.PUBLIC_URL + itemData[id].icon})` }
-
-//   return(
-//     <div className='item' id={id} style={id === 0 ? {display: 'none'} : {}}>
-//       <div className='item-icon'
-//         style={iconStyle}>
-//         <Link to={`/is/season2/item/${id}`}><p>{itemData[id].no}</p></Link>
-//       </div>
-//     </div>
-//   );
-// }
 
 function Item2(props) {
   const id = props.id;
@@ -108,33 +144,11 @@ function Item2(props) {
     <div className='item' id={id}>
       <div className='item-icon'
         style={iconStyle}>
-        <Link to={`/is/season2/item/${id}`}><p>{String(id).padStart(3, '0')}</p></Link>
+        <Link to={`/is/season2/item/${id}`}><p>{id > 204 ? `SP${String(id-204).padStart(2, '0')}` : String(id).padStart(3, '0')}</p></Link>
       </div>
     </div>
   );
 }
-
-// function ItemDetail() {
-//   const navigate = useNavigate();
-//   const id = useParams().itemId;
-//   const iconStyle = { backgroundImage: `url(${process.env.PUBLIC_URL + itemData[id].icon})` }
-
-//   return(
-//     <section className='item__section' id={id}>
-//       <div className='item-section__background' onClick={() => { navigate("/is/season2/item"); }}></div>
-//       <div className='item-section__inner'>
-//         <div className='item-no section__item'>{itemData[id].no}</div>
-//         <div className='item-icon section__item' style={iconStyle}></div>
-//         <div className='item-name section__item'>
-//           {itemData[id].name}
-//         </div>
-//         <div className='item-detail section__item'>
-//           {itemData[id].detail}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
 
 function ItemDetail2() {
   const navigate = useNavigate();
@@ -146,7 +160,7 @@ function ItemDetail2() {
     <section className='item__section' id={id}>
       <div className='item-section__background' onClick={() => { navigate("/is/season2/item"); }}></div>
       <div className='item-section__inner'>
-        <div className='item-no section__item'>{String(id + 1).padStart(3, '0')}</div>
+        <div className='item-no section__item'>{id > 204-1 ? `SP${String(id-203).padStart(2, '0')}` : String(id + 1).padStart(3, '0')}</div>
         <div className='item-icon section__item' style={iconStyle}></div>
         <div className='item-name section__item'>
           {itemData2[items2[id]].name}
