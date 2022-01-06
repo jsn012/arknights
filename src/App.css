@@ -132,7 +132,7 @@ main {
     width: 90px;
     transition: all .25s;
   }
-  .item-icon:hover {
+  .item-icon:not(.item__section .item-icon):hover {
     cursor: pointer;
     transform: scale(1.15);
   }
