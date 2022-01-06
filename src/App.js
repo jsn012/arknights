@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/is/season2/*" element={<Is2 />} />
+        <Route path="/is/season2/item/*" element={<Is2 />} />
       </Routes>
     </div>
   );
@@ -67,7 +67,7 @@ function Is2() {
             ))}
           </div>
           <Routes>
-            <Route path="/item/:itemId" element={<ItemDetail />} />
+            <Route path="/:itemId" element={<ItemDetail />} />
           </Routes>
         </div>
       </main>
@@ -96,7 +96,7 @@ function ItemDetail() {
 
   return(
     <section className='item__section' id={id}>
-      <div className='item-section__background' onClick={(e) => { navigate("/is/season2"); }}></div>
+      <div className='item-section__background' onClick={() => { navigate("/is/season2/item"); }}></div>
       <div className='item-section__inner'>
         <div className='item-no section__item'>{itemData[id].no}</div>
         <div className='item-icon section__item' style={iconStyle}></div>

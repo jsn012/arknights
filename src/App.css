@@ -28,7 +28,7 @@ main {
 
 .is2-item__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
   gap: 32px 6px;
 }
 
@@ -39,11 +39,11 @@ main {
 }
 
 .item-icon {
-  width: 70px;
-  aspect-ratio: 1.5/1;
+  width: 80px;
+  aspect-ratio: 1;
   border: 1px solid #aaa;
   background-repeat : no-repeat;
-  background-size: auto 100%;
+  background-size: contain;
   background-position: center;
   position: relative;
 }
@@ -152,9 +152,9 @@ main {
 @media screen and (min-width: 1000px) {
   main { padding: 40px 80px; }
 
-  .is2-item__grid { grid-template-columns: repeat(auto-fill, minmax(105px, 1fr)); }
+  .is2-item__grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); }
   
-  .item-icon { width: 105px; }
+  .item-icon { width: 100px; }
   .is2-item__grid { gap: 46px 16px; }
 
   .item-icon a p {
