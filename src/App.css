@@ -31,7 +31,7 @@ main {
 .item-icon {
   width: 70px;
   aspect-ratio: 1;
-  border: 1px solid #aaa;
+  border: 1px solid #bbb;
   background-repeat : no-repeat;
   background-size: contain;
   background-position: center;

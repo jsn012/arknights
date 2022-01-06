@@ -138,7 +138,11 @@ function Is2() {
 function Item2(props) {
   const id = props.id;
   const data = props.data;
-  const iconStyle = { backgroundImage: `url(${process.env.PUBLIC_URL+'/items/'+itemData2[data].id}.png)` }
+  const iconStyle = {
+    backgroundImage: `url(${process.env.PUBLIC_URL+'/items/'+itemData2[data].id}.png)`,
+    borderBottom: `3px solid ${itemData2[data].rarity == "NORMAL" ? '#aaa' : 
+      (itemData2[data].rarity == "RARE" ? '#6563FE' : '#FFCD32')}`
+  }
 
   return(
     <div className='item' id={id}>
