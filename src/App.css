@@ -94,10 +94,11 @@ main {
 .item-no {
   font-size: 15px;
   font-weight: 700;
-  margin: 12px 0 7px 0;
+  margin: 11px 0 7px 0;
 }
 
 .item__section .item-icon {
+  width: 75px;
   margin: 7px auto;
   border: none;
 }
@@ -141,6 +142,23 @@ main {
     top: -17px;
     left: 2px;
   }
+
+  .item-no { font-size: 17px; }
+  .item__section .item-icon {
+    width: 120px;
+    margin: 10px auto;
+  }
+
+  .item__section .item-name {
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .item__section .item-detail {
+    margin: 8px 0 16px 0;
+    font-size: 18px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -164,5 +182,10 @@ main {
     font-size: 17px;
     top: -18px;
     left: 3px;
+  }
+
+  .item__section .item-icon {
+    width: 130px;
+    margin: 10px auto;
   }
 }
