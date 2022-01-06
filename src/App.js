@@ -43,15 +43,7 @@ function Is2() {
   });
 
   const items2 = Object.keys(itemData2);
-
-  let itemList = [];
   let itemId = 1;
-
-  for (let i=0; i<Object.keys(itemData2).length; i++) {
-    itemList.push(
-      <Item2 data={Object.keys(itemData2)[i]} id={i} key={Object.keys(itemData2)[i]} />
-    );
-  }
 
   return(
     <>
@@ -93,19 +85,19 @@ function Is2() {
   );
 }
 
-function Item(props) {
-  const id = props.id;
-  const iconStyle = { backgroundImage: `url(${process.env.PUBLIC_URL + itemData[id].icon})` }
+// function Item(props) {
+//   const id = props.id;
+//   const iconStyle = { backgroundImage: `url(${process.env.PUBLIC_URL + itemData[id].icon})` }
 
-  return(
-    <div className='item' id={id} style={id === 0 ? {display: 'none'} : {}}>
-      <div className='item-icon'
-        style={iconStyle}>
-        <Link to={`/is/season2/item/${id}`}><p>{itemData[id].no}</p></Link>
-      </div>
-    </div>
-  );
-}
+//   return(
+//     <div className='item' id={id} style={id === 0 ? {display: 'none'} : {}}>
+//       <div className='item-icon'
+//         style={iconStyle}>
+//         <Link to={`/is/season2/item/${id}`}><p>{itemData[id].no}</p></Link>
+//       </div>
+//     </div>
+//   );
+// }
 
 function Item2(props) {
   const id = props.id;
@@ -122,27 +114,27 @@ function Item2(props) {
   );
 }
 
-function ItemDetail() {
-  const navigate = useNavigate();
-  const id = useParams().itemId;
-  const iconStyle = { backgroundImage: `url(${process.env.PUBLIC_URL + itemData[id].icon})` }
+// function ItemDetail() {
+//   const navigate = useNavigate();
+//   const id = useParams().itemId;
+//   const iconStyle = { backgroundImage: `url(${process.env.PUBLIC_URL + itemData[id].icon})` }
 
-  return(
-    <section className='item__section' id={id}>
-      <div className='item-section__background' onClick={() => { navigate("/is/season2/item"); }}></div>
-      <div className='item-section__inner'>
-        <div className='item-no section__item'>{itemData[id].no}</div>
-        <div className='item-icon section__item' style={iconStyle}></div>
-        <div className='item-name section__item'>
-          {itemData[id].name}
-        </div>
-        <div className='item-detail section__item'>
-          {itemData[id].detail}
-        </div>
-      </div>
-    </section>
-  );
-}
+//   return(
+//     <section className='item__section' id={id}>
+//       <div className='item-section__background' onClick={() => { navigate("/is/season2/item"); }}></div>
+//       <div className='item-section__inner'>
+//         <div className='item-no section__item'>{itemData[id].no}</div>
+//         <div className='item-icon section__item' style={iconStyle}></div>
+//         <div className='item-name section__item'>
+//           {itemData[id].name}
+//         </div>
+//         <div className='item-detail section__item'>
+//           {itemData[id].detail}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
 
 function ItemDetail2() {
   const navigate = useNavigate();
