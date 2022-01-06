@@ -2,7 +2,7 @@
 main {
   max-width: 1200px;
   min-width: 150px;
-  padding: 20px 20px 30px 20px;
+  padding: 20px 18px 30px 18px;
   margin: 0 auto;
 }
 
@@ -17,7 +17,7 @@ main {
 .grid-on .is2-item__grid { display: grid; }
 .grid-off .is2-item__grid { display: none; }
 .is2-item__grid {
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
   gap: 15px 10px;
   margin-bottom: 50px;
 }
@@ -29,7 +29,7 @@ main {
 }
 
 .item-icon {
-  width: 80px;
+  width: 70px;
   aspect-ratio: 1;
   border: 1px solid #aaa;
   background-repeat : no-repeat;
@@ -53,7 +53,7 @@ main {
   color: #000;
   top: -14px;
   left: 2px;
-  text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
+  text-shadow: -1px 1px #fff, 1px -1px #fff, 1px 1px #fff, -1px -1px #fff;
   position: absolute;
 }
 

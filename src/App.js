@@ -163,10 +163,10 @@ function ItemDetail2() {
         <div className='item-no section__item'>{id > 204-1 ? `SP${String(id-203).padStart(2, '0')}` : String(id + 1).padStart(3, '0')}</div>
         <div className='item-icon section__item' style={iconStyle}></div>
         <div className='item-name section__item'>
-          {itemData2[items2[id]].name}
+          {itemData2[items2[id]].nameKr}
         </div>
         <div className='item-detail section__item'>
-          {itemData2[items2[id]].usage}
+          {itemData2[items2[id]].usageKr}
         </div>
       </div>
     </section>
