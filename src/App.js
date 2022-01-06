@@ -108,7 +108,7 @@ function Item2(props) {
     <div className='item' id={id}>
       <div className='item-icon'
         style={iconStyle}>
-        <Link to={`/is/season2/item/${id}`}><p>{id}</p></Link>
+        <Link to={`/is/season2/item/${id}`}><p>{String(id).padStart(3, '0')}</p></Link>
       </div>
     </div>
   );
@@ -146,7 +146,7 @@ function ItemDetail2() {
     <section className='item__section' id={id}>
       <div className='item-section__background' onClick={() => { navigate("/is/season2/item"); }}></div>
       <div className='item-section__inner'>
-        <div className='item-no section__item'>{id+1}</div>
+        <div className='item-no section__item'>{String(id + 1).padStart(3, '0')}</div>
         <div className='item-icon section__item' style={iconStyle}></div>
         <div className='item-name section__item'>
           {itemData2[items2[id]].name}
