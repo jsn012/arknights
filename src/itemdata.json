@@ -3168,7 +3168,7 @@
     "description": "一把折断的剑，姑且能用……大概吧……",
     "usage": "所有干员的生命-30%，但再部署时间-50%",
     "nameKr": "“끊어진 검”",
-    "usageKr": "모든 오퍼레이터 HP +30%, 재배치 시간 -50%",
+    "usageKr": "모든 오퍼레이터 HP -30%, 재배치 시간 -50%",
     "obtainApproach": "在集成战略模式中获得",
     "iconId": "rogue_1_relic_m05",
     "type": "RELIC",
