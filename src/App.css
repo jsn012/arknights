@@ -62,21 +62,40 @@
 
 
 
+
+html, body, #root, .App, .background {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* header */
+.header-back__btn svg {
+  fill: #fff;
+  padding: 4px 12px;
+}
+
 /* main */
-main {
-  min-width: 150px;
-  height: 100vh;
+.is2-item {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 4px 36px 8px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .is2-item__main {
   width: 100%;
   max-width: 1200px;
-  padding: 20px 18px;
-  height: 90%;
+  padding: 0 12px;
+  margin: 0 auto;
   overflow: auto;
+  box-sizing: border-box;
 }
 
 .is2-item__main::-webkit-scrollbar{ width: 4px; }
@@ -97,7 +116,7 @@ main {
 }
 
 .grid__header:first-child {
-  margin: 6px 0;
+  margin: 0 0 6px 0;
 }
 
 .grid-on .is2-item__grid { display: grid; }
@@ -105,7 +124,7 @@ main {
 .is2-item__grid {
   grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
   gap: 12px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .item {
@@ -122,6 +141,7 @@ main {
   background-size: contain;
   background-position: center;
   position: relative;
+  background-color: #00000035;
 }
 
 .item-icon:not(.section__item):before {
@@ -147,7 +167,7 @@ main {
   text-decoration: none;
 }
 
-.item-icon a p {
+.item-icon p {
   font-size: 12px;
   font-weight: 600;
   color: #fff;
@@ -203,7 +223,7 @@ main {
   top: 0;
   position: absolute;
   content: '';
-  opacity: .9;
+  opacity: .8;
 }
 
 .section__item:not(.item-icon) {
@@ -220,6 +240,7 @@ main {
   width: 75px;
   margin: 7px auto;
   border: none;
+  background-color: #00000000;
 }
 
 .item__section .item-name {
@@ -267,7 +288,7 @@ main {
     cursor: pointer;
     transform: scale(1.15);
   }
-  .item-icon a p {
+  .item-icon p {
     font-size: 14px;
     top: -14px;
     left: 3px;
@@ -331,7 +352,7 @@ main {
   .item-icon { width: 50px; }
   .is2-item__grid { gap: 10px; }
 
-  .item-icon a p {
+  .item-icon p {
     font-size: 5px;
     top: -6px;
     left: 2px;

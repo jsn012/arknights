@@ -15,13 +15,13 @@ function App() {
 
   return (
     <div className="App">
-      <div className='background' style={bgImg}>
+      <main className='background' style={bgImg}>
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/is/season2/*" element={<Is2 />} />
           <Route path="/is/season2/item/*" element={<Is2Item />} />
         </Routes>
-      </div>
+      </main>
     </div>
   );
 }
@@ -57,6 +57,7 @@ function Is2() {
 }
 
 function Is2Item() {
+  const navigate = useNavigate();
   const items2 = Object.keys(itemData2);
   let itemId = 1;
 
@@ -101,11 +102,19 @@ function Is2Item() {
   }
 
   return(
-    <main>
-      <div className='is2-item__main'>
+    <section className='is2-item'>
+      <header className='is2-item__header'>
+        <div className='header-back__btn'>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+            className="bi bi-chevron-left" viewBox="0 0 16 16" onClick={() => navigate('/is/season2')}>
+            <path fillRule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+          </svg>
+        </div>
+      </header>
+      <main className='is2-item__main'>
         <section className={`relic_r ${gridStyle[0]}`}>
           <div className={`grid__header survival-suppor`} onClick={gridOnOff}>
-            <span>Survival Suppor</span>
+            <span>Survival Support</span>
           </div>
           <div className='is2-item__grid'>
             {relic_r}
@@ -153,7 +162,7 @@ function Is2Item() {
         </section>
         <section className={`relic_sp ${gridStyle[6]}`}>
           <div className={`grid__header secret-in-the-troupe`} onClick={gridOnOff}>
-            Secret In The Troupe
+            Secret in the Troupe
           </div>
           <div className='is2-item__grid relic_sp'>
             {relic_sp}
@@ -162,12 +171,13 @@ function Is2Item() {
         <Routes>
           <Route path="/:itemId" element={<ItemDetail2 />} />
         </Routes>
-      </div>
-    </main>
+      </main>
+    </section>
   );
 }
 
 function Item2(props) {
+  const navigate = useNavigate();
   const id = props.id;
   const data = props.data;
   const iconStyle = {
@@ -177,10 +187,9 @@ function Item2(props) {
   }
 
   return(
-    <div className='item' id={id}>
-      <div className='item-icon'
-        style={iconStyle}>
-        <Link to={`/is/season2/item/${id}`}><p>{id > 203 ? `PCS${String(id-203).padStart(2, '0')}` : String(id).padStart(3, '0')}</p></Link>
+    <div className='item' id={id} onClick={() => { navigate(`/is/season2/item/${id}`) }}>
+      <div className='item-icon' style={iconStyle}>
+        <p>{id > 203 ? `PCS${String(id - 203).padStart(2, '0')}` : String(id).padStart(3, '0')}</p>
       </div>
     </div>
   );
