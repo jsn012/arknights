@@ -141,7 +141,7 @@ function Item2(props) {
   const id = props.id;
   const data = props.data;
   const iconStyle = {
-    backgroundImage: `url(${process.env.PUBLIC_URL+'/items/'+itemData2[data].id}.png)`,
+    backgroundImage: `url(${process.env.PUBLIC_URL+'/img/items/'+itemData2[data].id}.png)`,
     borderBottom: `3px solid ${itemData2[data].rarity == "NORMAL" ? '#aaa' : 
       (itemData2[data].rarity == "RARE" ? '#6563FE' : '#FFCD32')}`
   }
@@ -150,7 +150,7 @@ function Item2(props) {
     <div className='item' id={id}>
       <div className='item-icon'
         style={iconStyle}>
-        <Link to={`/is/season2/item/${id}`}><p>{id > 203 ? `SP${String(id-203).padStart(2, '0')}` : String(id).padStart(3, '0')}</p></Link>
+        <Link to={`/is/season2/item/${id}`}><p>{id > 203 ? `PCS${String(id-203).padStart(2, '0')}` : String(id).padStart(3, '0')}</p></Link>
       </div>
     </div>
   );
@@ -160,13 +160,13 @@ function ItemDetail2() {
   const navigate = useNavigate();
   const items2 = Object.keys(itemData2);
   const id = useParams().itemId-1;
-  const iconStyle = { backgroundImage: `url(${process.env.PUBLIC_URL + '/items/' + itemData2[items2[id]].id}.png)` }
+  const iconStyle = { backgroundImage: `url(${process.env.PUBLIC_URL + '/img/items/' + itemData2[items2[id]].id}.png)` }
 
   return(
     <section className='item__section' id={id}>
       <div className='item-section__background' onClick={() => { navigate(-1); }}></div>
       <div className='item-section__inner'>
-        <div className='item-no section__item'>{id > 203-1 ? `SP${String(id-202).padStart(2, '0')}` : String(id + 1).padStart(3, '0')}</div>
+        <div className='item-no section__item'>{id > 203-1 ? `PCS${String(id-202).padStart(2, '0')}` : String(id + 1).padStart(3, '0')}</div>
         <div className='item-icon section__item' style={iconStyle}></div>
         <div className='item-name section__item'>
           {itemData2[items2[id]].nameKr}
