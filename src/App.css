@@ -124,7 +124,7 @@ main {
   top: 0;
   position: absolute;
   content: '';
-  opacity: .7;
+  opacity: .9;
 }
 
 .section__item:not(.item-icon) {
