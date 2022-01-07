@@ -6,16 +6,11 @@ import './App.css';
 import React from 'react';
 
 function App() {
-  const bgImg = {
-    backgroundImage: `url(${process.env.PUBLIC_URL + '/img/is2-background.jpg'})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-    backgroundPosition: '50%'
-  }
+  const bgImg = { backgroundImage: `url(${process.env.PUBLIC_URL + '/img/is2-background.jpg'})` }
 
   return (
     <div className="App">
-      <main className='background' style={bgImg}>
+      <main className='background bg-img' style={bgImg}>
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/is/season2/*" element={<Is2 />} />
@@ -101,6 +96,8 @@ function Is2Item() {
     // }
   }
 
+  const hpIcon = { backgroundImage: `url(${process.env.PUBLIC_URL + '/img/hypergryph-icon.png'})` }
+
   return(
     <section className='is2-item'>
       <header className='is2-item__header'>
@@ -110,6 +107,9 @@ function Is2Item() {
             <path fillRule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
           </svg>
         </div>
+        <a href='https://ak.hypergryph.com/is/crimsonsolitaire'>
+          <div className='go-hp__btn bg-img' style={hpIcon}></div>
+        </a>
       </header>
       <main className='is2-item__main'>
         <section className={`relic_r ${gridStyle[0]}`}>

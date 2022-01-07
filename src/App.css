@@ -70,10 +70,27 @@ html, body, #root, .App, .background {
   position: relative;
 }
 
+.bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 /* header */
+.is2-item__header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header-back__btn svg {
   fill: #fff;
   padding: 4px 12px;
+}
+
+.go-hp__btn {
+  height: 28px;
+  aspect-ratio: 1;
+  margin-right: 12px;
 }
 
 /* main */
