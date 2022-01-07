@@ -1,14 +1,14 @@
 /* main */
 main {
-  max-width: 1200px;
   min-width: 150px;
   height: 100vh;
-  margin: 0 auto;
 }
 
 .is2__main {
+  max-width: 1200px;
   padding: 0 18px;
   height: 100%;
+  margin: 0 auto;
   overflow: auto;
 }
 
@@ -152,6 +152,7 @@ main {
 .item__section .item-detail {
   margin: 5px 0 12px 0;
   font-size: 14px;
+  white-space: pre-wrap;
 }
 
 .item-section__close-btn {
