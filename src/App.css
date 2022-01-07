@@ -72,7 +72,8 @@ main {
   font-size: 12px;
   font-weight: 600;
   color: #fff;
-  top: -12px;
+  text-shadow: -1px 1px #000, 1px -1px #000, 1px 1px #000, -1px -1px #000;
+  top: -11px;
   left: 4px;
   position: absolute;
 }
@@ -101,8 +102,10 @@ main {
 .item-section__inner {
   width: 90%;
   max-width: 800px;
-  background-color: #fff;
+  background-color: #000;
+  color: #fff;
   border-radius: 14px;
+  border: 1px solid #444;
   position: absolute;
   text-align: center;
   background-repeat : no-repeat;
@@ -111,17 +114,17 @@ main {
 }
 
 .item-section__inner::before {
-  background-image: url('https://raw.githubusercontent.com/jsn012/arknights/main/public/img/item-frame.png');
+  background-image: url('https://raw.githubusercontent.com/jsn012/arknights/main/public/img/item-background.png');
   background-repeat : no-repeat;
   background-size: contain;
   background-position: center;
-  width: 102%;
-  height: 102%;
-  left: -2%;
-  top: -2%;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
   position: absolute;
   content: '';
-  opacity: 0.4;
+  opacity: .7;
 }
 
 .section__item:not(.item-icon) {
@@ -150,6 +153,14 @@ main {
   margin: 5px 0 12px 0;
   font-size: 14px;
 }
+
+.item-section__close-btn {
+  position: fixed;
+  top: 12px;
+  right: 16px;
+  fill: #fff;
+}
+
 
 @media screen and (min-width: 550px) {
   .is2__main {
@@ -225,4 +236,7 @@ main {
     width: 130px;
     margin: 10px auto;
   }
+
+  .item__section .item-name { font-weight: 800; }
+  .item__section .item-detail { font-weight: 500; }
 }

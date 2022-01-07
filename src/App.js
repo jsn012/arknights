@@ -168,12 +168,11 @@ function ItemDetail2() {
   const items2 = Object.keys(itemData2);
   const id = useParams().itemId-1;
   const iconStyle = { backgroundImage: `url(${process.env.PUBLIC_URL + '/img/items/' + itemData2[items2[id]].id}.png)` }
-  const bgImg = { backgroundImage: `url(${process.env.PUBLIC_URL + '/img/item-background.png'})` }
 
   return(
     <section className='item__section' id={id}>
       <div className='item-section__background' onClick={() => { navigate(-1); }}></div>
-      <div className='item-section__inner' style={bgImg}>
+      <div className='item-section__inner'>
         <div className='item-no section__item'>{id > 203-1 ? `PCS${String(id-202).padStart(2, '0')}` : String(id + 1).padStart(3, '0')}</div>
         <div className='item-icon section__item' style={iconStyle}></div>
         <div className='item-name section__item'>
@@ -181,6 +180,11 @@ function ItemDetail2() {
         </div>
         <div className='item-detail section__item'>
           {itemData2[items2[id]].usageKr}
+        </div>
+        <div className='item-section__close-btn' onClick={() => { navigate(-1); }}>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16" strokeWidth="6">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+          </svg>
         </div>
       </div>
     </section>
