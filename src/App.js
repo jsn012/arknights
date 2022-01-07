@@ -107,67 +107,69 @@ function Is2Item() {
             <path fillRule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
           </svg>
         </div>
-        <a href='https://ak.hypergryph.com/is/crimsonsolitaire'>
+        <a href='https://ak.hypergryph.com/is/crimsonsolitaire' target='_blank'>
           <div className='go-hp__btn bg-img' style={hpIcon}></div>
         </a>
       </header>
       <main className='is2-item__main'>
-        <section className={`relic_r ${gridStyle[0]}`}>
-          <div className={`grid__header survival-suppor`} onClick={gridOnOff}>
-            <span>Survival Support</span>
-          </div>
-          <div className='is2-item__grid'>
-            {relic_r}
-          </div>
-        </section>
-        <section className={`relic_a ${gridStyle[1]}`}>
-          <div className={`grid__header gear-of-fight`} onClick={gridOnOff}>
-            Gear Of Fight
-          </div>
-          <div className='is2-item__grid'>
-            {relic_a}
-          </div>
-        </section>
-        <section className={`relic_p ${gridStyle[2]}`}>
-          <div className={`grid__header professional-tool`} onClick={gridOnOff}>
-            Professional Tool
-          </div>
-          <div className='is2-item__grid'>
-            {relic_p}
-          </div>
-        </section>
-        <section className={`relic_q ${gridStyle[3]}`}>
-          <div className={`grid__header collection-of-clever-use`} onClick={gridOnOff}>
-            Collection Of Clever Use
-          </div>
-          <div className='is2-item__grid relic_q'>
-            {relic_q}
-          </div>
-        </section>
-        <section className={`relic_c ${gridStyle[4]}`}>
-          <div className={`grid__header proof-of-glory`} onClick={gridOnOff}>
-            Proof Of Glory
-          </div>
-          <div className='is2-item__grid relic_c'>
-            {relic_c}
-          </div>
-        </section>
-        <section className={`relic_m ${gridStyle[5]}`}>
-          <div className={`grid__header storyteller`} onClick={gridOnOff}>
-            Storyteller
-          </div>
-          <div className='is2-item__grid relic_m'>
-            {relic_m}
-          </div>
-        </section>
-        <section className={`relic_sp ${gridStyle[6]}`}>
-          <div className={`grid__header secret-in-the-troupe`} onClick={gridOnOff}>
-            Secret in the Troupe
-          </div>
-          <div className='is2-item__grid relic_sp'>
-            {relic_sp}
-          </div>
-        </section>
+        <div className='item-grid__wrap'>
+          <section className={`relic_r ${gridStyle[0]}`}>
+            <div className={`grid__header survival-suppor`} onClick={gridOnOff}>
+              <span>Survival Support</span>
+            </div>
+            <div className='is2-item__grid'>
+              {relic_r}
+            </div>
+          </section>
+          <section className={`relic_a ${gridStyle[1]}`}>
+            <div className={`grid__header gear-of-fight`} onClick={gridOnOff}>
+              Gear Of Fight
+            </div>
+            <div className='is2-item__grid'>
+              {relic_a}
+            </div>
+          </section>
+          <section className={`relic_p ${gridStyle[2]}`}>
+            <div className={`grid__header professional-tool`} onClick={gridOnOff}>
+              Professional Tool
+            </div>
+            <div className='is2-item__grid'>
+              {relic_p}
+            </div>
+          </section>
+          <section className={`relic_q ${gridStyle[3]}`}>
+            <div className={`grid__header collection-of-clever-use`} onClick={gridOnOff}>
+              Collection Of Clever Use
+            </div>
+            <div className='is2-item__grid relic_q'>
+              {relic_q}
+            </div>
+          </section>
+          <section className={`relic_c ${gridStyle[4]}`}>
+            <div className={`grid__header proof-of-glory`} onClick={gridOnOff}>
+              Proof Of Glory
+            </div>
+            <div className='is2-item__grid relic_c'>
+              {relic_c}
+            </div>
+          </section>
+          <section className={`relic_m ${gridStyle[5]}`}>
+            <div className={`grid__header storyteller`} onClick={gridOnOff}>
+              Storyteller
+            </div>
+            <div className='is2-item__grid relic_m'>
+              {relic_m}
+            </div>
+          </section>
+          <section className={`relic_sp ${gridStyle[6]}`}>
+            <div className={`grid__header secret-in-the-troupe`} onClick={gridOnOff}>
+              Secret in the Troupe
+            </div>
+            <div className='is2-item__grid relic_sp'>
+              {relic_sp}
+            </div>
+          </section>
+        </div>
         <Routes>
           <Route path="/:itemId" element={<ItemDetail2 />} />
         </Routes>

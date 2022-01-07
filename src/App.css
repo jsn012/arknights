@@ -51,7 +51,7 @@
   border: 1px solid #fff;
   border-radius: 8px;
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -108,20 +108,36 @@ html, body, #root, .App, .background {
 
 .is2-item__main {
   width: 100%;
+  height: calc(100% - 40px);
   max-width: 1200px;
-  padding: 0 11px 0 15px;
+  /* padding: 0 11px 0 15px; */
   margin: 0 auto;
-  overflow: auto;
+  /* overflow: auto; */
   box-sizing: border-box;
 }
 
-.is2-item__main::-webkit-scrollbar{ width: 4px; }
+.item-grid__wrap {
+  overflow-y: auto;
+  height: 100%;
+  padding: 0 11px 0 15px;
+  box-sizing: border-box;
+}
+
+.item-grid__wrap::-webkit-scrollbar{ width: 4px; }
+.item-grid__wrap::-webkit-scrollbar-thumb{
+  height: auto;
+  background-color: #3f2e20;
+  border-radius: 10px;
+}
+.item-grid__wrap::-webkit-scrollbar-track{ background-color: #00000000; }
+
+/* .is2-item__main::-webkit-scrollbar{ width: 4px; }
 .is2-item__main::-webkit-scrollbar-thumb{
   height: auto;
   background-color: #3f2e20;
   border-radius: 10px;
 }
-.is2-item__main::-webkit-scrollbar-track{ background-color: #00000000; }
+.is2-item__main::-webkit-scrollbar-track{ background-color: #00000000; } */
 
 .grid__header {
   text-align: center;
@@ -328,6 +344,40 @@ html, body, #root, .App, .background {
     margin: 8px 0 16px 0;
     font-size: 18px;
   }
+}
+
+@media screen and (min-width: 800px) {
+  .is2-item__main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .item-grid__wrap {
+    width: 65%;
+    overflow-y: auto;
+  }
+
+  .item__section {
+    position: relative;
+    width: 35%;
+    background-color: #00000000;
+  }
+
+  .item-section__background {
+    display: none;
+  }
+
+  .item-section__inner {
+    background-color: #00000000;
+    border: none;
+  }
+
+  .item__section .item-name,
+  .item__section .item-detail {
+    padding: 0;
+  }
+
+  .item-section__close-btn { display: none; }
 }
 
 @media screen and (min-width: 1000px) {
