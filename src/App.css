@@ -101,7 +101,7 @@ html, body, #root, .App, .background {
   top: 0;
   width: 100%;
   box-sizing: border-box;
-  padding: 10px 4px 36px 8px;
+  padding: 10px 4px 4px 8px;
   display: flex;
   flex-direction: column;
 }
@@ -133,7 +133,7 @@ html, body, #root, .App, .background {
 }
 
 .grid__header:first-child {
-  margin: 0 0 6px 0;
+  margin: 3px 0 6px 0;
 }
 
 .grid-on .is2-item__grid { display: grid; }
@@ -143,6 +143,7 @@ html, body, #root, .App, .background {
   gap: 12px;
   margin-bottom: 40px;
 }
+.relic_sp { margin-bottom: 70px;}
 
 .item {
   display: flex;
