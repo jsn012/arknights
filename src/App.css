@@ -1,3 +1,67 @@
+/* is2-page*/
+.is2 {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.is2--logo {
+  width: 82%;
+  max-width: 350px;
+  aspect-ratio: 1;
+  top: 12%;
+  position: absolute;
+}
+
+.is2--logo .logo {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.is2--logo .title {
+  position: absolute;
+  width: 110%;
+  top: 34%;
+  left: calc((100% - 110%) / 2);
+  max-width: 400px;
+  aspect-ratio: 4/1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.is2__button {
+  position: absolute;
+  width: 52%;
+  max-width: 250px;
+  bottom: 100px;
+}
+
+.is2__button button {
+  width: 100%;
+  height: 45px;
+  margin-top: 12px;
+  background-color: #00000000;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.is2__button button:hover {
+  background-color: #4949494f;
+}
+
+
+
+
 /* main */
 main {
   min-width: 150px;
@@ -5,15 +69,24 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: linear-gradient(right, #4880EC, #019CAD);
 }
 
-.is2__main {
+.is2-item__main {
   width: 100%;
   max-width: 1200px;
   padding: 20px 18px;
   height: 90%;
   overflow: auto;
 }
+
+.is2-item__main::-webkit-scrollbar{ width: 4px; }
+.is2-item__main::-webkit-scrollbar-thumb{
+  height: auto;
+  background-color: #3f2e20;
+  border-radius: 10px;
+}
+.is2-item__main::-webkit-scrollbar-track{ background-color: #00000000; }
 
 .grid__header {
   text-align: center;
@@ -171,7 +244,7 @@ main {
 
 
 @media screen and (min-width: 550px) {
-  .is2__main {
+  .is2-item__main {
     padding: 0 22px;
   }
 
@@ -189,7 +262,7 @@ main {
 
   .item-icon {
     width: 90px;
-    transition: all .25s;
+    transition: all .28s;
   }
   .item-icon:not(.item__section .item-icon):hover {
     cursor: pointer;

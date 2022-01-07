@@ -6,12 +6,22 @@ import './App.css';
 import React from 'react';
 
 function App() {
+  const bgImg = {
+    backgroundImage: `url(${process.env.PUBLIC_URL + '/img/is2-background.jpg'})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    backgroundPosition: '50%'
+  }
+
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/is/season2/item/*" element={<Is2 />} />
-      </Routes>
+      <div className='background' style={bgImg}>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/is/season2/*" element={<Is2 />} />
+          <Route path="/is/season2/item/*" element={<Is2Item />} />
+        </Routes>
+      </div>
     </div>
   );
 }
@@ -21,12 +31,32 @@ function Main() {
 
   return(
     <div className='main'>
-      <button type='button' onClick={() => {navigate('/is/season2/item')}}>로그라이크2</button>
+      <button type='button' onClick={() => {navigate('/is/season2')}}>로그라이크2</button>
     </div>
   );
 }
 
 function Is2() {
+  const navigate = useNavigate();
+  const logoImg = { backgroundImage: `url(${process.env.PUBLIC_URL + '/img/crimson-solitaire.png'})` }
+  const titleImg = { backgroundImage: `url(${process.env.PUBLIC_URL + '/img/crimson-solitaire-title.png'})` }
+
+  return(
+    <div className='is2'>
+      <div className='is2--logo'>
+        <div className='logo' style={logoImg}> </div>
+        <div className='title' style={titleImg}> </div>
+      </div>
+      <div className='is2__button'>
+        <button type='button' onClick={() => { navigate('/is/season2/item') }}>소장품</button>
+        <button type='button'>레퍼토리</button>
+        <button type='button'>기타 아이템</button>
+      </div>
+    </div>
+  );
+}
+
+function Is2Item() {
   const items2 = Object.keys(itemData2);
   let itemId = 1;
 
@@ -70,16 +100,9 @@ function Is2() {
     // }
   }
 
-  const mainBg = {
-    backgroundImage: `url(${process.env.PUBLIC_URL + '/img/is2-background.jpg'})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-    backgroundPosition: '50%'
-  }
-
   return(
-    <main style={mainBg}>
-      <div className='is2__main'>
+    <main>
+      <div className='is2-item__main'>
         <section className={`relic_r ${gridStyle[0]}`}>
           <div className={`grid__header survival-suppor`} onClick={gridOnOff}>
             <span>Survival Suppor</span>
