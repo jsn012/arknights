@@ -2,13 +2,16 @@
 main {
   min-width: 150px;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .is2__main {
+  width: 100%;
   max-width: 1200px;
-  padding: 0 18px;
-  height: 100%;
-  margin: 0 auto;
+  padding: 20px 18px;
+  height: 90%;
   overflow: auto;
 }
 
@@ -19,6 +22,10 @@ main {
   padding: 10px 0;
   margin: 34px 0 6px 0;
   color: #fff;
+}
+
+.grid__header:first-child {
+  margin: 6px 0;
 }
 
 .grid-on .is2-item__grid { display: grid; }
@@ -240,4 +247,21 @@ main {
 
   .item__section .item-name { font-weight: 800; }
   .item__section .item-detail { font-weight: 500; }
+}
+
+@media screen and (max-height: 300px) {
+  .grid__header { font-size: 14px; }
+
+  .is2-item__grid {
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  }
+  
+  .item-icon { width: 50px; }
+  .is2-item__grid { gap: 10px; }
+
+  .item-icon a p {
+    font-size: 5px;
+    top: -6px;
+    left: 2px;
+  }
 }
