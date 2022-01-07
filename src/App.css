@@ -2,8 +2,14 @@
 main {
   max-width: 1200px;
   min-width: 150px;
-  padding: 20px 18px 30px 18px;
+  height: 100vh;
   margin: 0 auto;
+}
+
+.is2__main {
+  padding: 0 18px;
+  height: 100%;
+  overflow: auto;
 }
 
 .grid__header {
@@ -11,14 +17,15 @@ main {
   font-size: 22px;
   font-weight: 700;
   padding: 10px 0;
-  margin: 4px 0;
+  margin: 34px 0 6px 0;
+  color: #fff;
 }
 
 .grid-on .is2-item__grid { display: grid; }
 .grid-off .is2-item__grid { display: none; }
 .is2-item__grid {
   grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
-  gap: 15px 10px;
+  gap: 12px;
   margin-bottom: 50px;
 }
 
@@ -31,7 +38,7 @@ main {
 .item-icon {
   width: 70px;
   aspect-ratio: 1;
-  border: 1px solid #bbb;
+  /* border: 1px solid #bbb; */
   background-repeat : no-repeat;
   background-size: contain;
   background-position: center;
@@ -39,12 +46,17 @@ main {
 }
 
 .item-icon:not(.section__item):before {
-  background-image: url('img/item-frame.png');
-  background-color: #fff;
-  width: 100%;
-  height: 100%;
+  background-image: url('https://raw.githubusercontent.com/jsn012/arknights/main/public/img/item-frame.png');
+  background-repeat : no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 102%;
+  height: 102%;
+  left: -2%;
+  top: -2%;
   position: absolute;
   content: '';
+  opacity: 0.4;
 }
 
 .item-icon a {
@@ -57,12 +69,11 @@ main {
 }
 
 .item-icon a p {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
-  color: #000;
-  top: -14px;
-  left: 2px;
-  text-shadow: -1px 1px #fff, 1px -1px #fff, 1px 1px #fff, -1px -1px #fff;
+  color: #fff;
+  top: -12px;
+  left: 4px;
   position: absolute;
 }
 
@@ -73,7 +84,7 @@ main {
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: #00000080;
+  background-color: #0000009c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,12 +99,29 @@ main {
 }
 
 .item-section__inner {
-  width: 94%;
+  width: 90%;
   max-width: 800px;
   background-color: #fff;
   border-radius: 14px;
   position: absolute;
   text-align: center;
+  background-repeat : no-repeat;
+  background-size: 50%;
+  background-position: center;
+}
+
+.item-section__inner::before {
+  background-image: url('https://raw.githubusercontent.com/jsn012/arknights/main/public/img/item-frame.png');
+  background-repeat : no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 102%;
+  height: 102%;
+  left: -2%;
+  top: -2%;
+  position: absolute;
+  content: '';
+  opacity: 0.4;
 }
 
 .section__item:not(.item-icon) {
@@ -124,17 +152,19 @@ main {
 }
 
 @media screen and (min-width: 550px) {
-  main { padding: 30px 50px 20px 50px; }
+  .is2__main {
+    padding: 0 22px;
+  }
 
   .grid__header {
     font-size: 24px;
     padding: 13px 0;
-    margin: 3px 0;
+    margin: 34px 0 4px 0;
   }
 
   .is2-item__grid { 
     grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
-    gap: 20px;
+    gap: 18px;
     margin-bottom: 60px;
   }
 
@@ -147,9 +177,9 @@ main {
     transform: scale(1.15);
   }
   .item-icon a p {
-    font-size: 16px;
-    top: -17px;
-    left: 2px;
+    font-size: 14px;
+    top: -14px;
+    left: 3px;
   }
 
   .item-no { font-size: 17px; }
@@ -171,8 +201,6 @@ main {
 }
 
 @media screen and (min-width: 1000px) {
-  main { padding: 20px 80px 50px 80px; }
-
   .grid__header {
     font-size: 28px;
     padding: 14px 0;
@@ -180,18 +208,18 @@ main {
   }
 
   .is2-item__grid {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
     margin-bottom: 70px;
   }
   
-  .item-icon { width: 100px; }
-  .is2-item__grid { gap: 26px; }
+  /* .item-icon { width: 100px; } */
+  .is2-item__grid { gap: 20px; }
 
-  .item-icon a p {
-    font-size: 17px;
-    top: -18px;
-    left: 3px;
-  }
+  /* .item-icon a p {
+    font-size: 14px;
+    top: -15px;
+    left: 4px;
+  } */
 
   .item__section .item-icon {
     width: 130px;
