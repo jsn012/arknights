@@ -84,13 +84,13 @@ html, body, #root, .App, .background {
 
 .header-back__btn svg {
   fill: #fff;
-  padding: 4px 12px;
+  padding: 4px 4px 4px 15px;
 }
 
 .go-hp__btn {
   height: 28px;
   aspect-ratio: 1;
-  margin-right: 12px;
+  margin-right: 15px;
 }
 
 /* main */
@@ -101,7 +101,7 @@ html, body, #root, .App, .background {
   top: 0;
   width: 100%;
   box-sizing: border-box;
-  padding: 10px 4px 4px 8px;
+  padding: 10px 1px;
   display: flex;
   flex-direction: column;
 }
@@ -109,7 +109,7 @@ html, body, #root, .App, .background {
 .is2-item__main {
   width: 100%;
   max-width: 1200px;
-  padding: 0 12px;
+  padding: 0 11px 0 15px;
   margin: 0 auto;
   overflow: auto;
   box-sizing: border-box;
