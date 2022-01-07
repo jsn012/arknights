@@ -69,7 +69,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(right, #4880EC, #019CAD);
 }
 
 .is2-item__main {
