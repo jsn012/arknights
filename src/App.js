@@ -70,8 +70,15 @@ function Is2() {
     // }
   }
 
+  const mainBg = {
+    backgroundImage: `url(${process.env.PUBLIC_URL + '/img/is2-background.jpg'})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    backgroundPosition: '50%'
+  }
+
   return(
-    <main>
+    <main style={mainBg}>
       <div className='is2__main'>
         <section className={`relic_r ${gridStyle[0]}`}>
           <div className={`grid__header survival-suppor`} onClick={gridOnOff}>
@@ -142,8 +149,8 @@ function Item2(props) {
   const data = props.data;
   const iconStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL+'/img/items/'+itemData2[data].id}.png)`,
-    borderBottom: `3px solid ${itemData2[data].rarity == "NORMAL" ? '#aaa' : 
-      (itemData2[data].rarity == "RARE" ? '#6563FE' : '#FFCD32')}`
+    // borderBottom: `3px solid ${itemData2[data].rarity == "NORMAL" ? '#aaa' : 
+    //   (itemData2[data].rarity == "RARE" ? '#6563FE' : '#FFCD32')}`
   }
 
   return(
@@ -161,11 +168,12 @@ function ItemDetail2() {
   const items2 = Object.keys(itemData2);
   const id = useParams().itemId-1;
   const iconStyle = { backgroundImage: `url(${process.env.PUBLIC_URL + '/img/items/' + itemData2[items2[id]].id}.png)` }
+  const bgImg = { backgroundImage: `url(${process.env.PUBLIC_URL + '/img/item-background.png'})` }
 
   return(
     <section className='item__section' id={id}>
       <div className='item-section__background' onClick={() => { navigate(-1); }}></div>
-      <div className='item-section__inner'>
+      <div className='item-section__inner' style={bgImg}>
         <div className='item-no section__item'>{id > 203-1 ? `PCS${String(id-202).padStart(2, '0')}` : String(id + 1).padStart(3, '0')}</div>
         <div className='item-icon section__item' style={iconStyle}></div>
         <div className='item-name section__item'>
