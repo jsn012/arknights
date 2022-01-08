@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/trajan-pro');
+
 /* is2-page*/
 .is2 {
   height: 100vh;
@@ -62,7 +64,14 @@
 
 
 
-html, body, #root, .App, .background {
+html {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+body, #root, .App, .background {
   margin: 0;
   height: 100%;
   width: 100%;
@@ -100,7 +109,7 @@ html, body, #root, .App, .background {
   top: 0;
   width: 100%;
   box-sizing: border-box;
-  padding: 10px 1px 0 1px;
+  padding: 10px 2px 0 2px;
   display: flex;
   flex-direction: column;
 }
@@ -118,14 +127,14 @@ html, body, #root, .App, .background {
 .item-grid__wrap {
   overflow-y: auto;
   height: 100%;
-  padding: 0 11.5px 0 15px;
+  padding: 0 10.5px 0 14px;
   box-sizing: border-box;
 }
 
 .item-grid__wrap::-webkit-scrollbar{ width: 3.5px; }
 .item-grid__wrap::-webkit-scrollbar-thumb{
   height: auto;
-  background-color: #3f2e20;
+  background-color: #3f2e20e3;
   border-radius: 10px;
 }
 .item-grid__wrap::-webkit-scrollbar-track{ background-color: #00000000; }
@@ -139,21 +148,21 @@ html, body, #root, .App, .background {
 .is2-item__main::-webkit-scrollbar-track{ background-color: #00000000; } */
 
 .grid__header {
+  font-family: 'Trajan Pro', sans-serif;
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   padding: 10px 0;
   margin: 34px 0 6px 0;
-  color: #fff;
+  color: #ac825f;
 }
 
 .grid__header:first-child {
   margin: 3px 0 6px 0;
 }
 
-.grid-on .is2-item__grid { display: grid; }
-.grid-off .is2-item__grid { display: none; }
 .is2-item__grid {
+  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
   gap: 12px;
   margin-bottom: 40px;
@@ -174,7 +183,7 @@ html, body, #root, .App, .background {
   background-size: contain;
   background-position: center;
   position: relative;
-  background-color: #00000035;
+  background-color: #00000040;
 }
 
 .item-icon:not(.section__item):before {
@@ -201,11 +210,12 @@ html, body, #root, .App, .background {
 }
 
 .item-icon p {
+  font-family: 'Trajan Pro', sans-serif;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
   color: #fff;
   text-shadow: -1px 1px #000, 1px -1px #000, 1px 1px #000, -1px -1px #000;
-  top: -11px;
+  top: -9px;
   left: 4px;
   position: absolute;
   opacity: .9;
@@ -324,7 +334,7 @@ html, body, #root, .App, .background {
   }
   .item-icon p {
     font-size: 14px;
-    top: -14px;
+    top: -11px;
     left: 3px;
   }
 
