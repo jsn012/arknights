@@ -64,18 +64,13 @@
 
 
 
-html {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  position: relative;
-}
 
-body, #root, .App, .background {
+html, body, #root, .App, .background {
   margin: 0;
   height: 100%;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .bg-img {
