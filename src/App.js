@@ -14,8 +14,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/is/season2" element={<Is2 />} />
-          <Route path="/is/season2/item/*" element={<Is2_item />} />
-          <Route path="/is/season2/others" element={<Is2_others />} />
+          <Route path="/is/season2/item/*" element={<Is2Item />} />
+          <Route path="/is/season2/others" element={<Is2Others />} />
         </Routes>
       </main>
     </div>
@@ -52,7 +52,7 @@ function Is2() {
   );
 }
 
-function Is2_header() {
+function Is2Header() {
   const navigate = useNavigate();
   const hpIcon = { backgroundImage: `url(${process.env.PUBLIC_URL + '/img/hypergryph-icon.png'})` }
 
@@ -64,14 +64,14 @@ function Is2_header() {
           <path fillRule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
         </svg>
       </div>
-      <a href='https://ak.hypergryph.com/is/crimsonsolitaire' target='_blank'>
+      <a href='https://ak.hypergryph.com/is/crimsonsolitaire' target='_blank' rel='noreferrer noopener'>
         <div className='go-hp__btn bg-img' style={hpIcon}></div>
       </a>
     </header>
   );
 }
 
-function Is2_item() {
+function Is2Item() {
   const navigate = useNavigate();
   const items2 = Object.keys(itemData2);
   let itemId = 1;
@@ -119,7 +119,7 @@ function Is2_item() {
 
   return(
     <section className='is2-item'>
-      <Is2_header />
+      <Is2Header />
       <main className='is2-item__main'>
         <div className='item-grid__wrap'>
           {itemGrid}
@@ -192,12 +192,12 @@ function ItemDetail2() {
   );
 }
 
-function Is2_others() {
+function Is2Others() {
   const navigate = useNavigate();
 
   return(
     <section className='is2-item'>
-      <Is2_header />
+      <Is2Header />
     </section>
   );
 }

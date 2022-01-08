@@ -445,7 +445,7 @@ body, #root, .App, .background {
 }
 
 @media screen and (max-height: 350px) {
-  html { overflow: auto; }
+  html, body, #root, .App, .background { overflow: auto; }
 
   .grid__header { font-size: 14px; }
 
