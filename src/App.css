@@ -1,8 +1,28 @@
 @import url('http://fonts.cdnfonts.com/css/trajan-pro');
 
+html {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+body, #root, .App, .background {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 /* is2-page*/
 .is2 {
-  height: 100vh;
+  height: 100%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -42,7 +62,7 @@
   position: absolute;
   width: 52%;
   max-width: 250px;
-  bottom: 13%;
+  bottom: 12%;
 }
 
 .is2__button button {
@@ -59,24 +79,6 @@
 
 .is2__button button:hover {
   background-color: #4949494f;
-}
-
-
-
-
-
-html, body, #root, .App, .background {
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.bg-img {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 /* header */
