@@ -444,10 +444,6 @@ body, #root, .App, .background {
 }
 
 @media screen and (max-height: 300px) {
-  html {
-    overflow: auto;
-  }
-
   .grid__header { font-size: 14px; }
 
   .is2-item__grid {
