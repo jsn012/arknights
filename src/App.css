@@ -40,7 +40,7 @@
   position: absolute;
   width: 52%;
   max-width: 250px;
-  bottom: 15%;
+  bottom: 13%;
 }
 
 .is2__button button {
@@ -61,15 +61,11 @@
 
 
 
-html {
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
-}
 
-body, #root, .App, .background {
+html, body, #root, .App, .background {
   margin: 0;
   height: 100%;
+  width: 100%;
   position: relative;
 }
 

@@ -13,8 +13,9 @@ function App() {
       <main className='background bg-img' style={bgImg}>
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/is/season2/*" element={<Is2 />} />
-          <Route path="/is/season2/item/*" element={<Is2Item />} />
+          <Route path="/is/season2" element={<Is2 />} />
+          <Route path="/is/season2/item/*" element={<Is2_item />} />
+          <Route path="/is/season2/others" element={<Is2_others />} />
         </Routes>
       </main>
     </div>
@@ -45,13 +46,13 @@ function Is2() {
       <div className='is2__button'>
         <button type='button' onClick={() => { navigate('/is/season2/item') }}>소장품</button>
         <button type='button'>레퍼토리</button>
-        <button type='button'>기타 아이템</button>
+        <button type='button' onClick={() => { navigate('/is/season2/others') }}>기타 아이템</button>
       </div>
     </div>
   );
 }
 
-function Is2Item() {
+function Is2_item() {
   const navigate = useNavigate();
   const items2 = Object.keys(itemData2);
   let itemId = 1;
@@ -220,6 +221,16 @@ function ItemDetail2() {
             <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
           </svg>
         </div>
+      </div>
+    </section>
+  );
+}
+
+function Is2_others() {
+  return(
+    <section className='is2-item'>
+      <div className='is2-item__header'>
+
       </div>
     </section>
   );
