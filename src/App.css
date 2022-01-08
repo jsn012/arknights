@@ -1,4 +1,5 @@
 @import url('http://fonts.cdnfonts.com/css/trajan-pro');
+@import url('http://db.onlinewebfonts.com/c/7330cea698bc9dfd4bd024a38ea56a9a?family=Trajan+Pro+3');
 
 html {
   margin: 0;
@@ -144,10 +145,10 @@ body, #root, .App, .background {
 .is2-item__main::-webkit-scrollbar-track{ background-color: #00000000; } */
 
 .grid__header {
-  font-family: 'Trajan Pro', sans-serif;
+  font-family: 'Trajan Pro 3', sans-serif;
   text-align: center;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   padding: 10px 0;
   margin: 34px 0 6px 0;
   color: #ac825f;
@@ -206,13 +207,13 @@ body, #root, .App, .background {
 }
 
 .item-icon p {
-  font-family: 'Trajan Pro', sans-serif;
+  font-family: 'Trajan Pro 3', sans-serif;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   color: #fff;
   text-shadow: -1px 1px #000, 1px -1px #000, 1px 1px #000, -1px -1px #000;
   top: -9px;
-  left: 4px;
+  left: 3px;
   position: absolute;
   opacity: .9;
 }
