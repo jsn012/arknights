@@ -152,6 +152,7 @@ body, #root, .App, .background {
   text-align: center;
   font-size: 20px;
   font-weight: 600;
+  letter-spacing: 1.5px;
   padding: 10px 0;
   margin: 34px 0 6px 0;
   color: #ac825f;
@@ -183,7 +184,7 @@ body, #root, .App, .background {
   background-size: contain;
   background-position: center;
   position: relative;
-  background-color: #00000040;
+  background-color: #00000035;
 }
 
 .item-icon:not(.section__item):before {

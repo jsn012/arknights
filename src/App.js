@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Routes, Route, Link, useParams, useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 import itemData2 from './itemdata.json';
 import './App.css';
@@ -22,6 +23,48 @@ function App() {
   );
 }
 
+function Meta({data}) {
+  const lang = "ko_KR";
+  const siteName = "Arknights - 자승넛"
+  const title = data.title;
+  const description = data.description;
+  const canonical = `https://jsn012.github.io/arknights${data.canonical}`;
+  const type = data.type === undefined ? 'website' : data.type;
+
+  return(
+    <Helmet titleTemplate="%s">
+      <html lang={lang} />
+      <title>{title}</title>
+      <meta charset="utf-8" />
+      <meta name="description" content={description} />
+      <meta name="theme-color" content="#000000" />
+      {canonical ? <link rel="canonical" href={canonical} /> : null}
+      <link rel="icon" href={`${process.env.PUBLIC_URL}/rhodes_icon.png`} />
+
+      <meta property="og:site_name" content={siteName} />
+      <meta property="og:title" content={title} />
+      {description ? (
+        <meta property="og:description" content={description} />
+      ) : null}
+      {canonical ? <meta property="og:url" content={canonical} /> : null}
+      <meta property="og:locale" content={lang} />
+      <meta property="og:type" content={type} />
+      <meta property="fb:pages" content={siteName} />
+      <meta property="og:image" content={`${process.env.PUBLIC_URL}/rhodes_icon.png`} />
+
+      {/* change type of twitter if there is no image? */}
+      <meta name="twitter:title" content={title} />
+      {description ? (
+        <meta name="twitter:description" content={description} />
+      ) : null}
+      <meta name="twitter:site" content={siteName} />
+      {/* {canonical ? (
+        <link rel="alternate" href={canonical} hreflang={lang} />
+      ) : null} */}
+    </Helmet>
+  );
+}
+
 function Main() {
   const navigate = useNavigate();
 
@@ -37,18 +80,27 @@ function Is2() {
   const logoImg = { backgroundImage: `url(${process.env.PUBLIC_URL + '/img/crimson-solitaire.png'})` }
   const titleImg = { backgroundImage: `url(${process.env.PUBLIC_URL + '/img/crimson-solitaire-title.png'})` }
 
-  return(
-    <div className='is2'>
-      <div className='is2--logo'>
-        <div className='logo' style={logoImg}> </div>
-        <div className='title' style={titleImg}> </div>
+  const metaData = {
+    title: '팬텀 & 크림슨 솔리테어',
+    description: '명일방주 통합전략#2 팬텀 & 크림슨 솔리테어에 등장하는 소장품과 여러 아이템들 etc. _ MayNut',
+    canonical: `/is/season2`,
+  }
+
+  return (
+    <>
+      <Meta data={metaData} />
+      <div className='is2'>
+        <div className='is2--logo'>
+          <div className='logo' style={logoImg}> </div>
+          <div className='title' style={titleImg}> </div>
+        </div>
+        <div className='is2__button'>
+          <button type='button' onClick={() => { navigate('/is/season2/item') }}>소장품</button>
+          <button type='button'>레퍼토리</button>
+          <button type='button' onClick={() => { navigate('/is/season2/others') }}>기타</button>
+        </div>
       </div>
-      <div className='is2__button'>
-        <button type='button' onClick={() => { navigate('/is/season2/item') }}>소장품</button>
-        <button type='button'>레퍼토리</button>
-        <button type='button' onClick={() => { navigate('/is/season2/others') }}>기타</button>
-      </div>
-    </div>
+    </>
   );
 }
 
@@ -117,18 +169,27 @@ function Is2Item() {
     itemGrid.push(<ItemGrid arr={itemArr[i]} key={itemArr[i]._data} />);
   }
 
+  const metaData = {
+    title: '소장품 도감 - 팬텀 & 크림슨 솔리테어',
+    description: '명일방주 통합전략#2 팬텀 & 크림슨 솔리테어 소장품 한글 도감 _ MayNut',
+    canonical: '/is/season2/item',
+  }
+
   return(
-    <section className='is2-item'>
-      <Is2Header />
-      <main className='is2-item__main'>
-        <div className='item-grid__wrap'>
-          {itemGrid}
-        </div>
-        <Routes>
-          <Route path="/:itemId" element={<ItemDetail2 />} />
-        </Routes>
-      </main>
-    </section>
+    <>
+      <Meta data={metaData} />
+      <section className='is2-item'>
+        <Is2Header />
+        <main className='is2-item__main'>
+          <div className='item-grid__wrap'>
+            {itemGrid}
+          </div>
+          <Routes>
+            <Route path="/:itemId" element={<ItemDetail2 />} />
+          </Routes>
+        </main>
+      </section>
+    </>
   );
 }
 
@@ -170,25 +231,34 @@ function ItemDetail2() {
   const id = useParams().itemId-1;
   const iconStyle = { backgroundImage: `url(${process.env.PUBLIC_URL + '/img/items/' + itemData2[items2[id]].id}.png)` }
 
-  return(
-    <section className='item__section' id={id}>
-      <div className='item-section__background' onClick={() => { navigate(-1); }}></div>
-      <div className='item-section__inner'>
-        <div className='item-no section__item'>{id > 203-1 ? `PCS${String(id-202).padStart(2, '0')}` : String(id + 1).padStart(3, '0')}</div>
-        <div className='item-icon section__item' style={iconStyle}></div>
-        <div className='item-name section__item'>
-          {itemData2[items2[id]].nameKr}
+  const metaData = {
+    title: `${itemData2[items2[id]].nameKr} - 팬텀 & 크림슨 솔리테어`,
+    description: itemData2[items2[id]].usageKr,
+    canonical: `/is/season2/item/${id+1}`,
+  }
+
+  return (
+    <>
+      <Meta data={metaData} />
+      <section className='item__section' id={id}>
+        <div className='item-section__background' onClick={() => { navigate(-1); }}></div>
+        <div className='item-section__inner'>
+          <div className='item-no section__item'>{id > 203-1 ? `PCS${String(id-202).padStart(2, '0')}` : String(id + 1).padStart(3, '0')}</div>
+          <div className='item-icon section__item' style={iconStyle}></div>
+          <div className='item-name section__item'>
+            {itemData2[items2[id]].nameKr}
+          </div>
+          <div className='item-detail section__item'>
+            {itemData2[items2[id]].usageKr}
+          </div>
+          <div className='item-section__close-btn' onClick={() => { navigate(-1); }}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16" strokeWidth="6">
+              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </div>
         </div>
-        <div className='item-detail section__item'>
-          {itemData2[items2[id]].usageKr}
-        </div>
-        <div className='item-section__close-btn' onClick={() => { navigate(-1); }}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16" strokeWidth="6">
-            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-          </svg>
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 
