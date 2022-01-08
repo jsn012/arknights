@@ -11,7 +11,6 @@ body, #root, .App, .background {
   height: 100%;
   width: 100%;
   position: relative;
-  overflow: hidden;
 }
 
 .bg-img {
@@ -442,6 +441,10 @@ body, #root, .App, .background {
 }
 
 @media screen and (max-height: 300px) {
+  html {
+    overflow: auto;
+  }
+
   .grid__header { font-size: 14px; }
 
   .is2-item__grid {
