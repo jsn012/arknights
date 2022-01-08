@@ -30,6 +30,7 @@ function Meta({data}) {
   const description = data.description;
   const canonical = `https://jsn012.github.io/arknights${data.canonical}`;
   const type = data.type === undefined ? 'website' : data.type;
+  const icon = data.icon;
 
   return(
     <Helmet titleTemplate="%s">
@@ -39,7 +40,7 @@ function Meta({data}) {
       <meta name="description" content={description} />
       <meta name="theme-color" content="#000000" />
       {canonical ? <link rel="canonical" href={canonical} /> : null}
-      <link rel="icon" href={`${process.env.PUBLIC_URL}/rhodes_icon.png`} />
+      <link rel="icon" href={`${process.env.PUBLIC_URL}/rhodes_icon.png`} /> 
 
       <meta property="og:site_name" content={siteName} />
       <meta property="og:title" content={title} />
@@ -50,7 +51,7 @@ function Meta({data}) {
       <meta property="og:locale" content={lang} />
       <meta property="og:type" content={type} />
       <meta property="fb:pages" content={siteName} />
-      <meta property="og:image" content={`${process.env.PUBLIC_URL}/rhodes_icon.png`} />
+      <meta property="og:image" content={`${process.env.PUBLIC_URL}${icon ? icon : '/rhodes_icon.png'}`} />
 
       {/* change type of twitter if there is no image? */}
       <meta name="twitter:title" content={title} />
@@ -235,6 +236,7 @@ function ItemDetail2() {
     title: `${itemData2[items2[id]].nameKr} - 팬텀 & 크림슨 솔리테어`,
     description: itemData2[items2[id]].usageKr,
     canonical: `/is/season2/item/${id+1}`,
+    icon: `/img/items/${itemData2[items2[id]].id}.png`,
   }
 
   return (
