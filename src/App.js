@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Routes, Route, Link, useParams, useNavigate } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import itemData2 from './itemdata.json';
 import './App.css';
@@ -24,45 +25,42 @@ function App() {
 }
 
 function Meta({data}) {
-  const lang = "ko_KR";
+  // const lang = "ko_KR";
   const siteName = "Arknights - 자승넛"
   const title = data.title;
   const description = data.description;
   const canonical = `https://jsn012.github.io/arknights${data.canonical}`;
   const type = data.type === undefined ? 'website' : data.type;
   const icon = data.icon;
+  const author = "자승넛 MayNut"
 
   return(
-    <Helmet titleTemplate="%s">
-      <html lang={lang} />
-      <title>{title}</title>
-      <meta charset="utf-8" />
-      <meta name="description" content={description} />
-      <meta name="theme-color" content="#000000" />
-      {canonical ? <link rel="canonical" href={canonical} /> : null}
-      <link rel="icon" href={`${process.env.PUBLIC_URL}/rhodes_icon.png`} /> 
+    <HelmetProvider>
+      <Helmet titleTemplate="%s">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>{title}</title>
 
-      <meta property="og:site_name" content={siteName} />
-      <meta property="og:title" content={title} />
-      {description ? (
-        <meta property="og:description" content={description} />
-      ) : null}
-      {canonical ? <meta property="og:url" content={canonical} /> : null}
-      <meta property="og:locale" content={lang} />
-      <meta property="og:type" content={type} />
-      <meta property="fb:pages" content={siteName} />
-      <meta property="og:image" content={`${process.env.PUBLIC_URL}${icon ? icon : '/rhodes_icon.png'}`} />
+        <link rel="icon" href={`${process.env.PUBLIC_URL}${icon ? icon : '/rhodes_icon.png'}`} />
+        <link rel="apple-touch-icon" href={`${process.env.PUBLIC_URL}${icon ? icon : '/rhodes_icon.png'}`} />
 
-      {/* change type of twitter if there is no image? */}
-      <meta name="twitter:title" content={title} />
-      {description ? (
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content={description} />
+        <meta name="author" content={author} />
+        <meta name="twitter:title" content={author} />
         <meta name="twitter:description" content={description} />
-      ) : null}
-      <meta name="twitter:site" content={siteName} />
-      {/* {canonical ? (
-        <link rel="alternate" href={canonical} hreflang={lang} />
-      ) : null} */}
-    </Helmet>
+        <meta name="twitter:site" content={siteName} />
+        
+        <meta property="og:title" content={title} />
+        <meta property="og:type" content={type} />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:description" content={description} />
+        <meta property="og:site_name" content={siteName} />
+        <meta property="og:image" content={`${process.env.PUBLIC_URL}${icon ? icon : '/rhodes_icon.png'}`} />
+        <meta property="og:locale" content="ko_KR" />
+      </Helmet>
+    </HelmetProvider>
   );
 }
 
@@ -82,8 +80,8 @@ function Is2() {
   const titleImg = { backgroundImage: `url(${process.env.PUBLIC_URL + '/img/crimson-solitaire-title.png'})` }
 
   const metaData = {
-    title: '팬텀 & 크림슨 솔리테어',
-    description: '명일방주 통합전략#2 팬텀 & 크림슨 솔리테어에 등장하는 소장품과 여러 아이템들 etc. _ MayNut',
+    title: '팬텀과 크림슨 솔리테어',
+    description: '명일방주 통합전략#2 팬텀과 크림슨 솔리테어에 등장하는 소장품과 여러 아이템들 etc. _ MayNut',
     canonical: `/is/season2`,
   }
 
@@ -171,8 +169,8 @@ function Is2Item() {
   }
 
   const metaData = {
-    title: '소장품 도감 - 팬텀 & 크림슨 솔리테어',
-    description: '명일방주 통합전략#2 팬텀 & 크림슨 솔리테어 소장품 한글 도감 _ MayNut',
+    title: '소장품 도감 - 팬텀과 크림슨 솔리테어',
+    description: '명일방주 통합전략#2 팬텀과 크림슨 솔리테어 소장품 한글 도감 _ MayNut',
     canonical: '/is/season2/item',
   }
 
@@ -233,7 +231,7 @@ function ItemDetail2() {
   const iconStyle = { backgroundImage: `url(${process.env.PUBLIC_URL + '/img/items/' + itemData2[items2[id]].id}.png)` }
 
   const metaData = {
-    title: `${itemData2[items2[id]].nameKr} - 팬텀 & 크림슨 솔리테어`,
+    title: `${itemData2[items2[id]].nameKr} - 팬텀과 크림슨 솔리테어`,
     description: itemData2[items2[id]].usageKr,
     canonical: `/is/season2/item/${id+1}`,
     icon: `/img/items/${itemData2[items2[id]].id}.png`,
