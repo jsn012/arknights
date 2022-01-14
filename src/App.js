@@ -85,6 +85,10 @@ function Is2() {
     canonical: `/is/season2`,
   }
 
+  const readyMessage = () => {
+    alert('준비 중입니다.');
+  }
+
   return (
     <>
       <Meta data={metaData} />
@@ -95,8 +99,9 @@ function Is2() {
         </div>
         <div className='is2__button'>
           <button type='button' onClick={() => { navigate('/is/season2/item') }}>소장품</button>
-          <button type='button'>레퍼토리</button>
-          <button type='button' onClick={() => { navigate('/is/season2/others') }}>기타</button>
+          <button type='button' onClick={readyMessage}>레퍼토리</button>
+          {/* <button type='button' onClick={() => { navigate('/is/season2/others') }}>기타</button> */}
+          <button type='button' onClick={readyMessage}>기타</button>
         </div>
       </div>
     </>

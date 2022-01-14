@@ -358,6 +358,9 @@ body, #root, .App, .background {
 }
 
 @media screen and (min-width: 800px) {
+  .is2__button button,
+  .header-back__btn { cursor: pointer; }
+
   .is2-item {
     padding: 14px 20px 30px 20px;
   }
@@ -420,6 +423,11 @@ body, #root, .App, .background {
     font-size: 28px;
     padding: 14px 0;
     margin: 4px 0;
+  }
+
+  .is2-item__main {
+    width: 85%;
+    max-width: none;
   }
 
   .is2-item__grid {
